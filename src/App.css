@@ -1,2 +1,15 @@
-.inner-container {
+.App__container {
+  width: 100%;
+  position: relative;
+  padding: 0 25px;
+}
+
+.blur {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .App__container {
+    padding: 0 65px;
+  }
 }

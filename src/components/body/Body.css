@@ -1,0 +1,15 @@
+.Body__container {
+  width: 100%;
+  /* padding: 0 25px; */
+}
+
+.Body__heading {
+  color: var(--slate);
+  word-wrap: break-word;
+}
+
+@media screen and (min-width: 768px) {
+  .Body__container {
+    padding: 0 25px;
+  }
+}

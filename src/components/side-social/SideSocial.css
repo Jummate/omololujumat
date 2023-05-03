@@ -1,0 +1,42 @@
+.Social__container {
+  width: 60px;
+  height: 400px;
+  display: none;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  /* background-color: red; */
+}
+.Social__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70%;
+  gap: 10px;
+}
+.Social__wrapper span {
+  font-size: 20px;
+}
+.Social__wrapper span:hover {
+  color: var(--very-light-green);
+}
+.Social__wrapper a {
+  text-decoration: none;
+  color: var(--slate);
+}
+.Social__line {
+  height: 30px;
+  background-color: var(--slate);
+  height: 30%;
+  width: 1px;
+}
+@media screen and (min-width: 768px) {
+  .Social__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}

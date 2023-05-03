@@ -1,17 +1,16 @@
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Color Declaration */
+  --very-dark-green: #020c01;
+  --very-light-green: #3df92c;
+  --dark-green: #051203;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lighter-slate: #ccd6f6;
+  --white: #e6f1ff;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
+  /* Font declaration */
+  --ff-mono: "Share Tech Mono", "Ubuntu Mono", "Roboto Mono", monospace;
+  --ff-sans: "Quicksand", "Montserrat", "Ysabeau", sans-serif;
 }
 
 * {
@@ -26,8 +25,10 @@ html {
 
 body {
   font-size: 1.6rem;
+  /* height: 100%; */
   min-height: 100%;
-  background-color: #1d1d1d;
+  background-color: var(--very-dark-green);
+  /* position: relative; */
 }
 
 #root {
