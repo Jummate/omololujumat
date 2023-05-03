@@ -25,7 +25,14 @@ export const Nav = () => {
     <header className="Nav__container">
       <nav className="Nav__inner_container">
         <div className="Nav__logo_container">
-          <h1>Logo</h1>
+          <h1 className="logo">
+            <a
+              href="/"
+              title="Logo"
+            >
+              OJ
+            </a>
+          </h1>
         </div>
         <div className="Nav__link__container">
           {/* <UnorderedList items={["Home", "About", "Projects", "Contact"]} /> */}

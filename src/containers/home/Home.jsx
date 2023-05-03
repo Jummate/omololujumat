@@ -12,9 +12,9 @@ export const Home = () => {
         <p className="Home__interest">I enjoy building stuff for the web.</p>
 
         <p className="Home__content">
-          I'm a frontend developer with full focus on full stacj development but
-          for now Ia m still trying to master the art tfton t end dve,pmrnt
-          befpr{" "}
+          I'm a frontend developer passionate about transforming ideas into
+          valuable products. I specialize in building well-tailored and
+          performant web apps to deliver seamless experience to end users.
         </p>
         <p>
           <Button
