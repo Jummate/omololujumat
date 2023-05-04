@@ -13,3 +13,9 @@
     padding: 0 25px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .Body__container {
+    padding: 0 60px;
+  }
+}
