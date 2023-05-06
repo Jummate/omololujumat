@@ -1,22 +1,100 @@
 import "./About.css";
+import MyPhoto from "../../assets/my-photo.jpg";
+import { RxTriangleRight } from "react-icons/rx";
 
 export const About = () => {
   return (
-    <section className="About__container">
+    <section
+      className="About__container"
+      id="about"
+    >
       <h1 className="About__heading">About Me </h1>
 
       <article className="About__wrapper">
         {" "}
         <div className="About__image-container">
-          <p>This is where image goes</p>
+          <p>
+            <img
+              className="About__image"
+              src={MyPhoto}
+              alt="A photo of me"
+            />
+          </p>
         </div>
         <div className="About__content-container">
           <p>
-            This is is nxnxnxxnxxnx xnxbnd ddhdhd ddd dsvvdvdvdvdvdv ddhdhdhhd
-            djdjjdj dhdhdhd s d vvvdh fjff jjjjfj fkfjfj fkfdkkfd svavs gs a the
-            ub ff fffh hagsafsf jfjfjf kjgjg fadsd gdvddv hdgdgdgd adaefee jgjgn
-            bvfdcdb jgg vdfv
+            Hello! My name is Omololu. I'm a self-taught frontend developer. I
+            specialize in building well-tailored and performant web apps.
           </p>
+
+          <p>
+            I'm a big fan of Data Structure and Algorithm, and I enjoy solving
+            coding problems in my leisure.
+          </p>
+
+          <p>
+            After my internship with{" "}
+            <a
+              href="https://internship.zuri.team/"
+              target="_blank"
+              title="Zuri Internship"
+            >
+              Zuri Internship
+            </a>
+            , I've had the opportunity to work at{" "}
+            <a
+              href="https://nubiaville.com"
+              target="_blank"
+              title="Nubiaville Limited"
+            >
+              Nubiaville
+            </a>
+            , a start-up which offers a variety of IT solutions. At Nubiaville,
+            I handled wide varieties of web app projects including{" "}
+            <em>Asset Management System</em>,{" "}
+            <em>Transport Management System</em>,{" "}
+            <em>Engineering Job Request System</em>, just to mention a few.
+          </p>
+
+          <p>
+            Here are some of the technologies and tools that I work with
+            currently:
+          </p>
+          <div className="About__technologies">
+            <ul>
+              <li>
+                <RxTriangleRight className="arrow-icon" />
+                HTML5/CSS3
+              </li>
+              <li>
+                {" "}
+                <RxTriangleRight className="arrow-icon" />
+                JavaScript (ES6+)
+              </li>
+              <li>
+                {" "}
+                <RxTriangleRight className="arrow-icon" />
+                React
+              </li>
+            </ul>
+            <ul>
+              <li>
+                {" "}
+                <RxTriangleRight className="arrow-icon" />
+                Bootstrap
+              </li>
+              <li>
+                {" "}
+                <RxTriangleRight className="arrow-icon" />
+                JQuery
+              </li>
+              <li>
+                {" "}
+                <RxTriangleRight className="arrow-icon" />
+                Git
+              </li>
+            </ul>
+          </div>
         </div>
       </article>
     </section>

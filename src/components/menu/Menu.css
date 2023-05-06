@@ -39,6 +39,10 @@
   cursor: pointer;
 }
 
-.Menu__link__container li:hover {
+.Menu__link__container li a {
+  text-decoration: none;
+  color: var(--very-light-green);
+}
+.Menu__link__container li a:hover {
   color: var(--slate);
 }

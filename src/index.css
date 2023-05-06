@@ -11,6 +11,10 @@
   /* Font declaration */
   --ff-mono: "Share Tech Mono", "Ubuntu Mono", "Roboto Mono", monospace;
   --ff-sans: "Quicksand", "Montserrat", "Ysabeau", sans-serif;
+
+  /* Font size for Paragraphs */
+
+  --fs-para: clamp(1.25rem, 1.3vw, 1.45rem);
 }
 
 * {
@@ -21,6 +25,7 @@
 html {
   height: 100%;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
