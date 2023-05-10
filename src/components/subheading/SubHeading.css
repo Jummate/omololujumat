@@ -1,0 +1,18 @@
+.SubHeading__container {
+  width: 100%;
+}
+.sub-heading {
+  font-family: var(--ff-mono);
+  margin-bottom: 10px;
+  font-size: var(--fs-heading2);
+}
+
+.sub-heading::before {
+  content: "01";
+  color: var(--very-light-green);
+  font-size: 30px;
+  margin-right: 30px;
+  /* position: relative; */
+  /* top: 25px; */
+  /* z-index: -1; */
+}

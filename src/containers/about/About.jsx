@@ -1,6 +1,7 @@
 import "./About.css";
 import MyPhoto from "../../assets/my-photo.jpg";
 import { RxTriangleRight } from "react-icons/rx";
+import { BigHeading } from "../../components";
 
 export const About = () => {
   return (
@@ -8,7 +9,7 @@ export const About = () => {
       className="About__container"
       id="about"
     >
-      <h1 className="About__heading">About Me </h1>
+      <BigHeading text="About Me" />
 
       <article className="About__wrapper">
         {" "}

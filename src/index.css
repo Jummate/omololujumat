@@ -10,11 +10,13 @@
 
   /* Font declaration */
   --ff-mono: "Share Tech Mono", "Ubuntu Mono", "Roboto Mono", monospace;
-  --ff-sans: "Quicksand", "Montserrat", "Ysabeau", sans-serif;
+  --ff-sans: "Montserrat", "Quicksand", "Century Gothic", sans-serif;
 
   /* Font size for Paragraphs */
 
   --fs-para: clamp(1.25rem, 1.3vw, 1.45rem);
+  --fs-heading1: clamp(2.4rem, 4vw, 4.5rem);
+  --fs-heading2: clamp(2rem, 4vw, 2.5rem);
 }
 
 * {

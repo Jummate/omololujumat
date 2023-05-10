@@ -6,7 +6,7 @@
   color: var(--lighter-slate);
   /* font-weight: 100; */
   min-height: 100vh;
-  padding: 30px 0px;
+  padding-bottom: 50px;
   /* background-color: slate; */
   /* font-family: var(--ff-sans); */
 }
@@ -14,7 +14,7 @@
 .About__heading {
   font-family: var(--ff-mono);
   margin-bottom: 25px;
-  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-size: var(--fs-heading1);
 }
 
 .About__heading::after {
@@ -29,14 +29,13 @@
 }
 
 .About__container p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-sans);
   max-width: 600px;
-  /* max-width: clamp(400px, 10vw, 700px); */
   color: var(--slate);
   font-weight: bolder;
   line-height: 1.9;
   margin-bottom: 15px;
-  font-size: clamp(1.25rem, 1.3vw, 1.45rem);
+  font-size: var(--fs-para);
 }
 
 .About__container p a {
@@ -53,7 +52,6 @@
   max-width: 280px;
   height: auto;
   border-radius: 50%;
-  /* filter: drop-shadow(2px 2px 2px var(--light-green)); */
 }
 
 .About__image-container {
@@ -61,13 +59,13 @@
 }
 .About__technologies {
   padding: 0 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-sans);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   color: var(--slate);
   font-weight: bolder;
-  font-size: clamp(1.25rem, 1.3vw, 1.45rem);
+  font-size: var(--fs-para);
   line-height: 1.9;
 }
 
@@ -79,20 +77,12 @@
   color: var(--very-light-green);
   margin-right: 10px;
 }
-/* .About__technologies li::before {
-  content: url("https://cdn1.iconfinder.com/data/icons/shapes-line/50/8_faces-1024.png");
-  color: blue;
-  height: 10px;
-  width: 10px;
-} */
 
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
   .About__wrapper {
     display: flex;
-    /* flex: 1; */
     flex-direction: row-reverse;
     gap: 15px;
-    /* grid-template-columns: 3fr 2fr; */
   }
 
   .About__content-container {

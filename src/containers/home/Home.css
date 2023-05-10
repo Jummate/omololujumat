@@ -1,13 +1,8 @@
 .Home__container {
   width: 100%;
-  /* max-width: 600px; */
   color: var(--lighter-slate);
-  /* font-weight: 100; */
-  /* min-height: 100%; */
   min-height: 100vh;
   padding: 30px 0px;
-  /* font-family: var(--ff-sans); */
-  /* background-color: red; */
 }
 
 .Home__salutation {
@@ -34,15 +29,12 @@
   margin-bottom: 15px;
 }
 .Home__content {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-sans);
   max-width: 600px;
-  /* max-width: clamp(400px, 10vw, 700px); */
   font-size: 1.3rem;
   color: var(--slate);
   font-weight: bold;
   line-height: 1.7;
   margin-bottom: 15px;
   font-size: var(--fs-para);
-
-  /* font-size: 1.5rem; */
 }
