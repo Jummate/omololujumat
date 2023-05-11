@@ -1,14 +1,6 @@
-.Project__container {
-  display: flex;
-  flex-direction: column;
+.Project__image-wrapper {
   width: 100%;
-  color: var(--lighter-slate);
-  min-height: 100vh;
-  padding-bottom: 30px;
-}
-
-/* .Project__image-wrapper {
-  width: 100%;
+  /* position: relative; */
 }
 
 .Project__image {
@@ -31,10 +23,11 @@
   gap: 15px;
 }
 
-.Project__link {
+.Project__link,
+.Project__tools {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 .Project__link span {
   font-size: 20px;
@@ -65,4 +58,4 @@
   .Project__about {
     padding: 20px;
   }
-} */
+}
