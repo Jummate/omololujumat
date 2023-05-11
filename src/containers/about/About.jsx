@@ -1,5 +1,5 @@
 import "./About.css";
-import MyPhoto from "../../assets/my-photo.jpg";
+import { images } from "../../assets/images";
 import { RxTriangleRight } from "react-icons/rx";
 import { BigHeading } from "../../components";
 
@@ -17,7 +17,7 @@ export const About = () => {
           <p>
             <img
               className="About__image"
-              src={MyPhoto}
+              src={images.MyPhoto}
               alt="A photo of me"
             />
           </p>

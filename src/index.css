@@ -2,7 +2,8 @@
   /* Color Declaration */
   --very-dark-green: #020c01;
   --very-light-green: #3df92c;
-  --dark-green: #051203;
+  --darker-green: #040e02;
+  --dark-green: #061704;
   --slate: #8892b0;
   --light-slate: #a8b2d1;
   --lighter-slate: #ccd6f6;
@@ -12,11 +13,13 @@
   --ff-mono: "Share Tech Mono", "Ubuntu Mono", "Roboto Mono", monospace;
   --ff-sans: "Montserrat", "Quicksand", "Century Gothic", sans-serif;
 
-  /* Font size for Paragraphs */
+  /* Font sizes */
 
-  --fs-para: clamp(1.25rem, 1.3vw, 1.45rem);
-  --fs-heading1: clamp(2.4rem, 4vw, 4.5rem);
+  --fs-para: clamp(1.2rem, 1.3vw, 1.4rem);
+  --fs-heading1: clamp(2.2rem, 4vw, 4.3rem);
   --fs-heading2: clamp(2rem, 4vw, 2.5rem);
+  --fs-link: clamp(1.8rem, 4vw, 2rem);
+  --fs-tools: clamp(1.5rem, 4vw, 1.7rem);
 }
 
 * {

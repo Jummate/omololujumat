@@ -12,8 +12,10 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--dark-green);
+  background-color: var(--darker-green);
   color: var(--very-light-green);
+  box-shadow: 2px 2px 4px var(--dark-green);
+  position: fixed;
   position: fixed;
   font-family: var(--ff-mono);
   top: 0px;
