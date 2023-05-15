@@ -1,26 +1,12 @@
-import { useState, useContext } from "react";
-import { AppContext } from "../../utils";
+import { useState } from "react";
 import { Button } from "../button/Button";
-// import { UnorderedList } from "../unorderedlist/UnorderedList";
+import { Menu } from "../menu/Menu";
 import "./Navigation.css";
-import { FaBars, FaTimes } from "react-icons/fa";
-export const Nav = () => {
-  const [showFaBars, setShowFaBars] = useState(true);
-  const context = useContext(AppContext);
-  const body = document.querySelector("body");
-  const {
-    initialState: { showMenu },
-    contextDispatch,
-  } = context;
+import { FaBars } from "react-icons/fa";
 
-  const handleClick = () => {
-    setShowFaBars(!showFaBars);
-    body.classList.toggle("blur");
-    contextDispatch({
-      type: "SHOW_MENU",
-      payload: { showMenu: !showMenu },
-    });
-  };
+export const Nav = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <header className="Nav__container">
       <nav className="Nav__inner_container">
@@ -35,10 +21,9 @@ export const Nav = () => {
           </h1>
         </div>
         <div className="Nav__link__container">
-          {/* <UnorderedList items={["Home", "About", "Projects", "Contact"]} /> */}
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="">Home</a>
             </li>
             <li>
               <a href="#about">About</a>
@@ -52,25 +37,19 @@ export const Nav = () => {
             <li>
               <Button
                 text="Download CV"
-                onClick={() => console.log("Ypuuu")}
+                // onClick={() => console.log("Ypuuu")}
               />
             </li>
           </ul>
           <p>
-            {showFaBars ? (
-              <FaBars
-                className="fa-icon"
-                onClick={handleClick}
-              />
-            ) : (
-              <FaTimes
-                className="fa-icon fa-times"
-                onClick={handleClick}
-              />
-            )}
+            <FaBars
+              className="fa-icon"
+              onClick={() => setShowMenu(true)}
+            />
           </p>
         </div>
       </nav>
+      {showMenu && <Menu onClick={() => setShowMenu(false)} />}
     </header>
   );
 };

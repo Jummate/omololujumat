@@ -16,10 +16,15 @@ export const Contact = () => {
           large projects. However, if you have other request or question, don’t
           hesitate to use the form.
         </p>
-        <Button
-          text="Send Message"
-          extraStyle="p-20"
-        />
+        <a
+          href="mailto:omololujumat@gmail.com"
+          title="Contact Me"
+        >
+          <Button
+            text="Send Message"
+            extraStyle="p-20"
+          />
+        </a>
       </article>
     </section>
   );

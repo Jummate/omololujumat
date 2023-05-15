@@ -1,15 +1,20 @@
 import "./Menu.css";
 import { Button } from "../button/Button";
-// import { UnorderedList } from "../unorderedlist/UnorderedList";
+import { FaTimes } from "react-icons/fa";
 
-export const Menu = () => {
+export const Menu = ({ onClick }) => {
   return (
     <section className="Menu__container">
+      <div className="Menu__icon-container">
+        <FaTimes
+          className="fa-icon"
+          onClick={onClick}
+        />
+      </div>
       <div className="Menu__link__container">
-        {/* <UnorderedList items={["Home", "About", "Projects", "Contact"]} /> */}
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a href="">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -23,7 +28,7 @@ export const Menu = () => {
           <li>
             <Button
               text="Download CV"
-              onClick={() => console.log("Ypuuu")}
+              // onClick={() => console.log("Ypuuu")}
             />
           </li>
         </ul>

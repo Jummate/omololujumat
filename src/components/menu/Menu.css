@@ -1,12 +1,3 @@
-/* .Menu__overlay {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  min-height: 100vh;
-  z-index: 2;
-} */
-
 .Menu__container {
   width: 70%;
   height: 100vh;
@@ -16,11 +7,15 @@
   color: var(--very-light-green);
   box-shadow: 2px 2px 4px var(--dark-green);
   position: fixed;
-  position: fixed;
   font-family: var(--ff-mono);
   top: 0px;
-  left: 0px;
+  right: 0px;
   z-index: 2;
+}
+
+.fa-icon {
+  cursor: pointer;
+  font-size: 25px;
 }
 .Menu__link__container {
   height: 100%;
@@ -30,7 +25,12 @@
   padding-top: 60px;
   align-items: center;
 }
-
+.Menu__icon-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 0;
+  padding-right: 20px;
+}
 .Menu__link__container ul {
   display: flex;
   flex-direction: column;
@@ -47,4 +47,16 @@
 }
 .Menu__link__container li a:hover {
   color: var(--slate);
+}
+
+@media screen and (min-width: 768px) {
+  .Menu__container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .Menu__icon-container {
+    padding-right: 40px;
+  }
 }
