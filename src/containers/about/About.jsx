@@ -77,6 +77,11 @@ export const About = () => {
                 <RxTriangleRight className="arrow-icon" />
                 React
               </li>
+              <li>
+                {" "}
+                <RxTriangleRight className="arrow-icon" />
+                API
+              </li>
             </ul>
             <ul>
               <li>
@@ -92,7 +97,7 @@ export const About = () => {
               <li>
                 {" "}
                 <RxTriangleRight className="arrow-icon" />
-                Git
+                Git/GitHub
               </li>
             </ul>
           </div>

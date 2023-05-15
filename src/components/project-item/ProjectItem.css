@@ -30,7 +30,7 @@
   width: 100%;
   color: var(--slate);
   font-family: var(--ff-mono);
-  gap: 10px;
+  gap: 15px;
   background-color: var(--darker-green);
   padding-left: 4px;
   position: relative;
@@ -42,7 +42,8 @@
 .Project__tools {
   display: flex;
   align-items: center;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .Project__link span {
   font-size: var(--fs-link);
@@ -71,6 +72,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: var(--fs-para);
+  letter-spacing: 0.2px;
 }
 
 @media screen and (width >= 768px) {

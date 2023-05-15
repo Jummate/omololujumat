@@ -8,7 +8,7 @@ export const Home = () => {
       id="home"
     >
       <article>
-        <h5 className="Home__salutation">Hello, my name is </h5>
+        <h5 className="Home__salutation">Hello, I'm </h5>
 
         <p className="Home__name">Omololu Jumat.</p>
 

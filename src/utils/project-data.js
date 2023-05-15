@@ -7,7 +7,7 @@ export const projects = [
       alt: "Screenshot of the home page of the Guess Ninja game.",
     },
     description:
-      "This is description. Why does this feel like it's not going to crash anytime from now. Wow, it can give you every it takes for you to be there",
+      "A web-based multi-player guess game built with React and hosted on Netlify. It improves on the popular basic console guess game, offering something more advanced and out of the ordinary. It can be played by at most 5 players at a time.",
     tools: ["HTML", "CSS", "React", "Netlify"],
     view: {
       live: { href: "https://guess-ninja.netlify.app", title: "Guess Ninja" },
@@ -19,14 +19,63 @@ export const projects = [
   },
 
   {
+    projectName: "Marketeer",
+    image: {
+      src: images.Marketeer,
+      alt: "Screenshot of the home page of the Marketeer E-commerce app",
+    },
+    description:
+      "An e-commerce site built with JQuery and Boostrap, and hosted on GitHub Pages. It implements complete input validation and user authentication, captures customers' reviews, and leverages inline Paystack API for checkout.",
+    tools: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "JQuery",
+      "Paystack API",
+      "GitHub Pages",
+    ],
+    view: {
+      live: {
+        href: "https://jummate.github.io/marketeer",
+        title: "Marketeer E-commerce App",
+      },
+      repo: {
+        href: "https://github.com/Jummate/marketeer",
+        title: "Marketeer GiHub Repo",
+      },
+    },
+  },
+
+  {
+    projectName: "Currency Converter",
+    image: {
+      src: images.Converter,
+      alt: "Screenshot of the home page of the currency converter app",
+    },
+    description:
+      "A JavaScript-powered single page currency converter hosted on GitHub Pages. It wires into public currency API, which offers data of countries and their corresponding currency info.",
+    tools: ["HTML", "CSS", "JavaScript", "Currency API", "GitHub Pages"],
+    view: {
+      live: {
+        href: "https://jummate.github.io/currency-converter",
+        title: "Currency Converter",
+      },
+      repo: {
+        href: "https://github.com/Jummate/currency-converter",
+        title: "Currency Converter GiHub Repo",
+      },
+    },
+  },
+
+  {
     projectName: "Bricademia",
     image: {
       src: images.Bricademia,
       alt: "Screenshot of the home page of the Bricademia quiz app",
     },
     description:
-      "This is is Bricademia where things go down at the very speed of light. Now that everything is set, you can start distributing things just the way they are",
-    tools: ["HTML", "CSS", "JavaScript"],
+      "A Javascript-powered quiz app hosted on GitHub Pages. It offers a number of multi-choice questions based on users' chosen subject. It  features a timer, and enables users to keep track of tests written and also review a just-concluded test.",
+    tools: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
     view: {
       live: {
         href: "https://jummate.github.io/bricademia",

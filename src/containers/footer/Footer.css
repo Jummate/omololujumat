@@ -27,6 +27,7 @@
 }
 .Footer__text {
   text-align: center;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {

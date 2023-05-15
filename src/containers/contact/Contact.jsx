@@ -10,19 +10,23 @@ export const Contact = () => {
       <BigHeading text="Contact Me" />
       {/* <SubHeading text="Get In Touch" /> */}
       <article className="Contact__wrapper">
-        <h3>Get In Touch</h3>
-        <p>
-          I’m interested in freelance opportunities – especially ambitious or
-          large projects. However, if you have other request or question, don’t
-          hesitate to use the form.
-        </p>
+        <h2>Get In Touch</h2>
+        <div>
+          <p>
+            I’m currently looking for new opportunities. However, if you have
+            other request or question, don’t hesitate to use the button below.
+          </p>
+
+          <p>Be sure to get a response as swift as practicable.</p>
+        </div>
+
         <a
           href="mailto:omololujumat@gmail.com"
           title="Contact Me"
         >
           <Button
             text="Send Message"
-            extraStyle="p-20"
+            extraStyle="p-20 invert"
           />
         </a>
       </article>

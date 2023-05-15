@@ -18,15 +18,18 @@
   align-items: center;
   gap: 30px;
 }
-.Contact__wrapper h3 {
+.Contact__wrapper div {
+  padding: 0 10px;
+}
+.Contact__wrapper h2 {
   font-family: var(--ff-mono);
 }
 .Contact__wrapper p {
   font-family: var(--ff-sans);
-  max-width: 600px;
+  max-width: 500px;
   color: var(--slate);
   font-weight: bolder;
-  line-height: 1.9;
-  margin-bottom: 15px;
+  line-height: 2.5;
   font-size: var(--fs-para);
+  /* letter-spacing: 0.8px; */
 }
