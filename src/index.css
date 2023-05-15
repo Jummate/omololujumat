@@ -15,7 +15,7 @@
 
   /* Font sizes */
 
-  --fs-para: clamp(1.2rem, 1.3vw, 1.4rem);
+  --fs-para: clamp(1.22rem, 1.3vw, 1.42rem);
   --fs-heading1: clamp(2.2rem, 4vw, 4.3rem);
   --fs-heading2: clamp(2rem, 4vw, 2.5rem);
   --fs-link: clamp(1.8rem, 4vw, 2rem);

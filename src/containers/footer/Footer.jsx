@@ -25,7 +25,7 @@ export const Footer = () => {
           </span>
         </a>
       </div>
-      <p className="Footer__text">Built by Omololu Jumat</p>
+      <p className="Footer__text">Designed & Built by Omololu Jumat</p>
     </footer>
   );
 };

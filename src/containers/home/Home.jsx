@@ -22,7 +22,7 @@ export const Home = () => {
         <p>
           <Button
             text="Download CV"
-            onClick={() => console.log("Youuuuuu")}
+            // onClick={() => console.log("Youuuuuu")}
             extraStyle="pt-15"
           />
         </p>

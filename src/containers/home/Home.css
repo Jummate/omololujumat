@@ -3,6 +3,9 @@
   color: var(--lighter-slate);
   min-height: 100vh;
   padding: 30px 0px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: baseline; */
 }
 
 .Home__salutation {

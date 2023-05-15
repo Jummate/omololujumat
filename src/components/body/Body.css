@@ -1,6 +1,9 @@
 .Body__container {
   width: 100%;
   /* padding: 0 25px; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .Body__heading {
