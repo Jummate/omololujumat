@@ -1,19 +1,49 @@
-import { useState } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
 import { Button } from "../button/Button";
 import { Menu } from "../menu/Menu";
 import "./Navigation.css";
 import { FaBars } from "react-icons/fa";
+import { gsap } from "gsap";
 
 export const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
+  let navRef = useRef([]);
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.from(navRef.current, {
+        duration: 0.5,
+        opacity: 0,
+        delay: 0.5,
+        stagger: 0.2,
+      });
+    });
+
+    return () => ctx.revert();
+    // gsap.fromTo(
+    //   navRef.current,
+    //   { opacity: 0 },
+    //   {
+    //     duration: 0.5,
+    //     opacity: 1.0,
+    //     delay: 1,
+    //     stagger: 0.1,
+    //   }
+    // );
+  }, []);
 
   return (
     <header className="Nav__container">
       <nav className="Nav__inner_container">
         <div className="Nav__logo_container">
-          <h1 className="logo">
+          <h1
+            className="logo"
+            ref={(elem) => {
+              navRef.current[5] = elem;
+            }}
+          >
             <a
-              href="/"
+              href=""
               title="Logo"
             >
               OJ
@@ -22,23 +52,40 @@ export const Nav = () => {
         </div>
         <div className="Nav__link__container">
           <ul>
-            <li>
+            <li
+              ref={(elem) => {
+                navRef.current[0] = elem;
+              }}
+            >
               <a href="">Home</a>
             </li>
-            <li>
+            <li
+              ref={(elem) => {
+                navRef.current[1] = elem;
+              }}
+            >
               <a href="#about">About</a>
             </li>
-            <li>
+            <li
+              ref={(elem) => {
+                navRef.current[2] = elem;
+              }}
+            >
               <a href="#projects">Projects</a>
             </li>
-            <li>
+            <li
+              ref={(elem) => {
+                navRef.current[3] = elem;
+              }}
+            >
               <a href="#contact">Contact</a>
             </li>
-            <li>
-              <Button
-                text="Download CV"
-                // onClick={() => console.log("Ypuuu")}
-              />
+            <li
+              ref={(elem) => {
+                navRef.current[4] = elem;
+              }}
+            >
+              <Button text="Download CV" />
             </li>
           </ul>
           <p>
