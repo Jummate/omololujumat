@@ -1,6 +1,9 @@
 import "./ProjectItem.css";
 import { SubHeading } from "../subheading/SubHeading";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLayoutEffect, useRef } from "react";
 
 export const ProjectItem = ({ project }) => {
   const {
@@ -10,10 +13,35 @@ export const ProjectItem = ({ project }) => {
     tools,
     view: { live, repo },
   } = project;
+
+  gsap.registerPlugin(ScrollTrigger);
+  let projectRef = useRef(null);
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      const anim = gsap.fromTo(
+        ".to-animate",
+        { autoAlpha: 0, y: 50 },
+        { duration: 1, autoAlpha: 1, y: 0 }
+      );
+      ScrollTrigger.create({
+        trigger: ".to-animate",
+        animation: anim,
+        toggleActions: "restart none none none",
+        once: true,
+      });
+    }, projectRef.current);
+    return () => ctx.revert();
+  }, []);
   return (
-    <article className="Project__item-container">
-      <SubHeading text={projectName} />
-      <div className="Project__item">
+    <article
+      className="Project__item-container"
+      ref={projectRef}
+    >
+      <SubHeading
+        text={projectName}
+        className="to-animate"
+      />
+      <div className="Project__item to-animate">
         <div className="Project__image-wrapper">
           <img
             className="Project__image"

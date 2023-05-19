@@ -2,6 +2,7 @@ import "./Home.css";
 import { Button } from "../../components";
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from "react";
+import MyCV from "../../assets/Omololu-Jumat-CV.pdf";
 
 export const Home = () => {
   let homeRef = useRef([]);
@@ -12,6 +13,7 @@ export const Home = () => {
         duration: 0.5,
         opacity: 0,
         stagger: 0.1,
+        x: 30,
       });
     });
     return () => ctx.revert();
@@ -47,16 +49,21 @@ export const Home = () => {
           className="Home__content"
           ref={(elem) => (homeRef.current[3] = elem)}
         >
-          I'm a frontend developer, passionate about transforming ideas into
-          valuable products. I specialize in building well-tailored and
-          performant web apps to deliver seamless experience to end users.
+          I'm a front-end developer passionate about transforming ideas into
+          valuable products. I specialize in building well-tailored, responsive
+          and performant web apps to deliver seamless experience to end users.
         </p>
         <p ref={(elem) => (homeRef.current[4] = elem)}>
-          <Button
-            text="Download CV"
-            // onClick={() => console.log("Youuuuuu")}
-            extraStyle="pt-15"
-          />
+          <a
+            href={MyCV}
+            target="_blank"
+          >
+            {" "}
+            <Button
+              text="Download CV"
+              extraStyle="pt-15"
+            />
+          </a>
         </p>
       </article>
     </section>

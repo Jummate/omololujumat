@@ -25,12 +25,12 @@ export const projects = [
       alt: "Screenshot of the home page of the Marketeer E-commerce app",
     },
     description:
-      "An e-commerce site built with JQuery and Boostrap, and hosted on GitHub Pages. It implements complete input validation and user authentication, captures customers' reviews, and leverages inline Paystack API for checkout.",
+      "An e-commerce site built with jQuery and Bootstrap, and hosted on GitHub Pages. It implements complete input validation and user authentication, captures customers' reviews, and leverages inline Paystack API for checkout.",
     tools: [
       "HTML",
       "CSS",
       "Bootstrap",
-      "JQuery",
+      "jQuery",
       "Paystack API",
       "GitHub Pages",
     ],
@@ -53,7 +53,7 @@ export const projects = [
       alt: "Screenshot of the home page of the currency converter app",
     },
     description:
-      "A JavaScript-powered single page currency converter hosted on GitHub Pages. It wires into public currency API, which offers data of countries and their corresponding currency info.",
+      "A JavaScript-powered single page currency converter app hosted on GitHub Pages. It wires into public currency API, which offers data of countries and their corresponding currency info.",
     tools: ["HTML", "CSS", "JavaScript", "Currency API", "GitHub Pages"],
     view: {
       live: {

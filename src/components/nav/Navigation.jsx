@@ -4,6 +4,7 @@ import { Menu } from "../menu/Menu";
 import "./Navigation.css";
 import { FaBars } from "react-icons/fa";
 import { gsap } from "gsap";
+import MyCV from "../../assets/Omololu-Jumat-CV.pdf";
 
 export const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -85,10 +86,19 @@ export const Nav = () => {
                 navRef.current[4] = elem;
               }}
             >
-              <Button text="Download CV" />
+              <a
+                href={MyCV}
+                target="_blank"
+              >
+                <Button text="Download CV" />
+              </a>
             </li>
           </ul>
-          <p>
+          <p
+            ref={(elem) => {
+              navRef.current[6] = elem;
+            }}
+          >
             <FaBars
               className="fa-icon"
               onClick={() => setShowMenu(true)}
