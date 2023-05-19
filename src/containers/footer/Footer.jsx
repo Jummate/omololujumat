@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { year } from "../../utils/date";
 
 export const Footer = () => {
   return (
@@ -25,7 +26,9 @@ export const Footer = () => {
           </span>
         </a>
       </div>
-      <p className="Footer__text">Designed & Built by Omololu Jumat</p>
+      <p className="Footer__text">
+        Designed & Built by Omololu Jumat &copy;{year}
+      </p>
     </footer>
   );
 };

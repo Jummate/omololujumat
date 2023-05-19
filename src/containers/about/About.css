@@ -37,6 +37,9 @@
   border-radius: 50%;
   filter: grayscale(50);
 }
+.About__image:hover {
+  filter: grayscale(0);
+}
 
 .About__image-container {
   text-align: center;

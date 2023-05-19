@@ -22,6 +22,10 @@
   height: auto;
   border-radius: 5px;
   opacity: 0.5;
+  transition: opacity 1.5s ease-in-out;
+}
+.Project__image:hover {
+  opacity: 0.8;
 }
 
 .Project__about {
