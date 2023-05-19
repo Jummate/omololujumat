@@ -17,7 +17,7 @@ export const Footer = () => {
         </a>
 
         <a
-          href="https://www.linkedin.com/omololu-jumat-1405"
+          href="https://www.linkedin.com/in/omololu-jumat-1405"
           aria-label="LinkedIn"
           title="LinkedIn"
         >

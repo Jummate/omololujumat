@@ -19,7 +19,7 @@ export const Project = () => {
       ScrollTrigger.create({
         trigger: projectRef.current,
         animation: anim,
-        toggleActions: "restart none none none",
+        toggleActions: "play none none none",
         once: true,
       });
     });
