@@ -5,12 +5,13 @@
   padding: 12px 10px;
   color: var(--very-dark-green);
   cursor: pointer;
-  font-weight: 400;
+  /* font-weight: 400; */
   border-radius: 5px;
   transition: all ease-in 0.2s;
   letter-spacing: 1.1px;
   font-family: var(--ff-mono);
   font-weight: bolder;
+  font-size: 1.7rem;
 }
 
 .buttonStyle:hover {

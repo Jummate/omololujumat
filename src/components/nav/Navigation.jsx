@@ -89,6 +89,7 @@ export const Nav = () => {
               <a
                 href={MyCV}
                 target="_blank"
+                extraStyle="p-15"
               >
                 <Button text="Download CV" />
               </a>
