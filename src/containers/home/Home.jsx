@@ -61,7 +61,7 @@ export const Home = () => {
             {" "}
             <Button
               text="Download CV"
-              extraStyle="pt-15"
+              extraStyle="p-20"
             />
           </a>
         </p>
