@@ -31,24 +31,27 @@ export const Menu = ({ onClick }) => {
       </div>
       <div className="Menu__link__container">
         <ul>
-          <li>
+          <li onClick={onClick}>
             <a href="">Home</a>
           </li>
-          <li>
+          <li onClick={onClick}>
             <a href="#about">About</a>
           </li>
-          <li>
+          <li onClick={onClick}>
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          <li onClick={onClick}>
             <a href="#contact">Contact</a>
           </li>
-          <li>
+          <li onClick={onClick}>
             <a
               href={MyCV}
               target="_blank"
             >
-              <Button text="Download CV" />
+              <Button
+                text="Download CV"
+                extraStyle="p-15"
+              />
             </a>
           </li>
         </ul>

@@ -20,7 +20,7 @@ export const ProjectItem = ({ project }) => {
     let ctx = gsap.context(() => {
       const anim = gsap.fromTo(
         ".to-animate",
-        { autoAlpha: 0, y: 50 },
+        { autoAlpha: 0, y: 70 },
         { duration: 1, autoAlpha: 1, y: 0 }
       );
       ScrollTrigger.create({
