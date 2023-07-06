@@ -3,7 +3,7 @@ import Converter from "./currency-converter.png";
 import GuessNinja from "./guess-ninja.png";
 import Bricademia from "./bricademia.png";
 import MyPhoto from "./my-photo.jpg";
-import CAMS from "./cams.jpg";
+import CAMS from "./cams.png";
 
 export const images = {
   Marketeer,
