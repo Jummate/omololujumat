@@ -89,9 +89,11 @@ export const Nav = () => {
               <a
                 href={MyCV}
                 target="_blank"
-                extraStyle="p-15"
               >
-                <Button text="Download CV" />
+                <Button
+                  text="Download CV"
+                  extraStyle="p-15"
+                />
               </a>
             </li>
           </ul>

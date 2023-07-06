@@ -19,6 +19,27 @@ export const projects = [
   },
 
   {
+    projectName: "Child Abuse Management System",
+    image: {
+      src: images.CAMS,
+      alt: "Screenshot of the home page of Child Abuse Management System.",
+    },
+    description:
+      "A dynamic web application built with JavaScript and PHP, and temporarily hosted on InfinityFree. It facilitates the reporting of child abuse cases.",
+    tools: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Apex Charts"],
+    view: {
+      live: {
+        href: "http://cams.infinityfreeapp.com",
+        title: "Child Abuse Management System",
+      },
+      repo: {
+        href: "https://github.com/Jummate/child-abuse-management-system",
+        title: "Child Abuse Management System Repo",
+      },
+    },
+  },
+
+  {
     projectName: "Marketeer",
     image: {
       src: images.Marketeer,
