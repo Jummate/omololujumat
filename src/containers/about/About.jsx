@@ -111,6 +111,11 @@ export const About = () => {
                 <RxTriangleRight className="arrow-icon" />
                 API
               </li>
+              <li>
+                {" "}
+                <RxTriangleRight className="arrow-icon" />
+                Node.js
+              </li>
             </ul>
             <ul>
               <li>
@@ -137,6 +142,11 @@ export const About = () => {
                 {" "}
                 <RxTriangleRight className="arrow-icon" />
                 Jest
+              </li>
+              <li>
+                {" "}
+                <RxTriangleRight className="arrow-icon" />
+                TailwindCSS
               </li>
             </ul>
           </div>

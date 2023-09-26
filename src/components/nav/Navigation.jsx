@@ -51,7 +51,7 @@ export const Nav = () => {
             </a>
           </h1>
         </div>
-        <div className="Nav__link__container">
+        <div className="Nav__link_container">
           <ul>
             <li
               ref={(elem) => {
@@ -81,22 +81,23 @@ export const Nav = () => {
             >
               <a href="#contact">Contact</a>
             </li>
-            <li
-              ref={(elem) => {
-                navRef.current[4] = elem;
-              }}
-            >
-              <a
-                href={MyCV}
-                target="_blank"
-              >
-                <Button
-                  text="Download CV"
-                  extraStyle="p-15"
-                />
-              </a>
-            </li>
           </ul>
+        </div>
+        <div className="Nav__action_container">
+          <a
+            href={MyCV}
+            target="_blank"
+            ref={(elem) => {
+              navRef.current[4] = elem;
+            }}
+            className="Nav__action_cv"
+          >
+            <Button
+              text="Download CV"
+              extraStyle="p-15"
+            />
+          </a>
+
           <p
             ref={(elem) => {
               navRef.current[6] = elem;

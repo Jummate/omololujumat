@@ -7,8 +7,8 @@ export const projects = [
       alt: "Screenshot of the home page of the Guess Ninja game.",
     },
     description:
-      "A web-based multi-player guess game built with React and hosted on Netlify. It improves on the popular basic console guess game, offering something more advanced and out of the ordinary. It can be played by at most 5 players at a time.",
-    tools: ["HTML", "CSS", "React", "Netlify"],
+      "A web-based multi-player guess game that improves on the popular basic console guess game. However, it offers something more advanced and out of the ordinary. The game can be played by at most 5 players at a time.",
+    tools: ["HTML", "CSS", "JavaScript", "React"],
     view: {
       live: { href: "https://guess-ninja.netlify.app", title: "Guess Ninja" },
       repo: {
@@ -25,11 +25,11 @@ export const projects = [
       alt: "Screenshot of the home page of Child Abuse Management System.",
     },
     description:
-      "A dynamic web application built with JavaScript and PHP, and temporarily hosted on InfinityFree. It facilitates the reporting of child abuse cases.",
-    tools: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Apex Charts"],
+      "A dynamic full-stack web application built and aimed at facilitating the reporting of child abuse cases.",
+    tools: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     view: {
       live: {
-        href: "http://cams.infinityfreeapp.com",
+        href: "https://child-abuse-management-system.000webhostapp.com/",
         title: "Child Abuse Management System",
       },
       repo: {
@@ -43,18 +43,11 @@ export const projects = [
     projectName: "Marketeer",
     image: {
       src: images.Marketeer,
-      alt: "Screenshot of the home page of the Marketeer E-commerce app",
+      alt: "Screenshot of the home page of the Marketeer e-commerce app",
     },
     description:
-      "An e-commerce site built with jQuery and Bootstrap, and hosted on GitHub Pages. It implements complete input validation and user authentication, captures customers' reviews, and leverages inline Paystack API for checkout.",
-    tools: [
-      "HTML",
-      "CSS",
-      "Bootstrap",
-      "jQuery",
-      "Paystack API",
-      "GitHub Pages",
-    ],
+      "A static e-commerce site that leverages inline Paystack API for checkout. It implements input validation and user authentication, and offers verified customers the chance to air their reviews on any product.",
+    tools: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Paystack"],
     view: {
       live: {
         href: "https://jummate.github.io/marketeer",
@@ -74,8 +67,8 @@ export const projects = [
       alt: "Screenshot of the home page of the currency converter app",
     },
     description:
-      "A JavaScript-powered single page currency converter app hosted on GitHub Pages. It wires into public currency API, which offers data of countries and their corresponding currency info.",
-    tools: ["HTML", "CSS", "JavaScript", "Currency API", "GitHub Pages"],
+      "A JavaScript-powered single page that wires into public currency API. The API offers diverse data of countries and their corresponding currency info.",
+    tools: ["HTML", "CSS", "JavaScript"],
     view: {
       live: {
         href: "https://jummate.github.io/currency-converter",
@@ -95,8 +88,8 @@ export const projects = [
       alt: "Screenshot of the home page of the Bricademia quiz app",
     },
     description:
-      "A Javascript-powered quiz app hosted on GitHub Pages. It offers a number of multi-choice questions based on users' chosen subject. It  features a timer, and enables users to keep track of tests written and also review a just-concluded test.",
-    tools: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+      "A very user-friendly Javascript-powered quiz app. It offers a number of multi-choice questions based on users' chosen subject. It features a timer, and offers functionalities that enable users to keep track of every tests written and to review a just-concluded test.",
+    tools: ["HTML", "CSS", "JavaScript"],
     view: {
       live: {
         href: "https://jummate.github.io/bricademia",
