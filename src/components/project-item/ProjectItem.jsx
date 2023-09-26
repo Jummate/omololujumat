@@ -4,6 +4,7 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
+import { Button } from "../button/Button";
 
 export const ProjectItem = ({ project }) => {
   const {
@@ -64,9 +65,9 @@ export const ProjectItem = ({ project }) => {
               aria-label={live.title}
               title={live.title}
             >
-              <span>
-                <FiExternalLink />
-              </span>
+              <Button extraStyle="invert">
+                <FiExternalLink /> View Live Site
+              </Button>
             </a>
 
             <a
@@ -74,9 +75,9 @@ export const ProjectItem = ({ project }) => {
               aria-label={repo.title}
               title={repo.title}
             >
-              <span>
-                <FiGithub />
-              </span>
+              <Button>
+                <FiGithub /> Github Repo
+              </Button>
             </a>
           </div>
         </div>
