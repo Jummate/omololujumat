@@ -65,8 +65,8 @@ export const ProjectItem = ({ project }) => {
               aria-label={live.title}
               title={live.title}
             >
-              <Button extraStyle="invert">
-                <FiExternalLink /> View Live Site
+              <Button extraStyle="invert fs-responsive">
+                <FiExternalLink /> Go to Site
               </Button>
             </a>
 
@@ -75,8 +75,8 @@ export const ProjectItem = ({ project }) => {
               aria-label={repo.title}
               title={repo.title}
             >
-              <Button>
-                <FiGithub /> Github Repo
+              <Button extraStyle="fs-responsive">
+                <FiGithub /> GitHub Repo
               </Button>
             </a>
           </div>

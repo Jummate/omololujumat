@@ -47,10 +47,10 @@
   font-size: 25px;
 }
 
-/* .Nav__action_container {
+.Nav__action_container {
   display: flex;
   gap: 10px;
-} */
+}
 .Nav__action_cv {
   display: none;
 }

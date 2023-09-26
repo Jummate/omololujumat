@@ -98,13 +98,16 @@ export const Nav = () => {
             />
           </a>
 
-          <FaBars
-            className="fa-icon"
-            onClick={() => setShowMenu(true)}
+          <p
             ref={(elem) => {
               navRef.current[6] = elem;
             }}
-          />
+          >
+            <FaBars
+              className="fa-icon"
+              onClick={() => setShowMenu(true)}
+            />
+          </p>
         </div>
       </nav>
       {showMenu && <Menu onClick={() => setShowMenu(false)} />}

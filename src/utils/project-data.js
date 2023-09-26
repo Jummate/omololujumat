@@ -8,7 +8,7 @@ export const projects = [
     },
     description:
       "A web-based multi-player guess game that improves on the popular basic console guess game. However, it offers something more advanced and out of the ordinary. The game can be played by at most 5 players at a time.",
-    tools: ["HTML", "CSS", "React"],
+    tools: ["HTML", "CSS", "JavaScript", "React"],
     view: {
       live: { href: "https://guess-ninja.netlify.app", title: "Guess Ninja" },
       repo: {
@@ -47,7 +47,7 @@ export const projects = [
     },
     description:
       "A static e-commerce site that leverages inline Paystack API for checkout. It implements input validation and user authentication, and offers verified customers the chance to air their reviews on any product.",
-    tools: ["HTML", "CSS", "Bootstrap", "jQuery"],
+    tools: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Paystack"],
     view: {
       live: {
         href: "https://jummate.github.io/marketeer",
