@@ -72,7 +72,7 @@ export const Nav = () => {
                 navRef.current[2] = elem;
               }}
             >
-              <a href="#projects">Projects</a>
+              <a href="#projects">My Works</a>
             </li>
             <li
               ref={(elem) => {

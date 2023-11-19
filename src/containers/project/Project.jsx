@@ -1,7 +1,6 @@
 import "./Project.css";
-import { BigHeading } from "../../components";
+import { BigHeading, ProjectItem, FilterField } from "../../components";
 import { projects } from "../../utils/project-data";
-import { ProjectItem } from "../../components";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
@@ -31,8 +30,9 @@ export const Project = () => {
       id="projects"
       ref={projectRef}
     >
-      <BigHeading text="Things I've built" />
+      <BigHeading text="My Works" />
 
+      {/* <FilterField /> */}
       {projects.map((project, index) => (
         <ProjectItem
           key={index}
