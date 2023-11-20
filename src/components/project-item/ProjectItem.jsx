@@ -10,7 +10,7 @@ export const ProjectItem = ({ project }) => {
   const {
     projectName,
     image: { src, alt },
-    description,
+    summary,
     tools,
     view: { live, repo },
   } = project;
@@ -52,7 +52,7 @@ export const ProjectItem = ({ project }) => {
         </div>
         <div className="Project__about">
           <div className="Project__description">
-            <p>{description}</p>
+            <p>{summary}</p>
           </div>
           <div className="Project__tools">
             {tools.map((tool, index) => (

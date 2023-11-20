@@ -79,7 +79,7 @@
 .About__technologies-items-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 .About__technologies-items-wrapper h4 {
