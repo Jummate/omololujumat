@@ -9,7 +9,7 @@ export const FilterField = ({ setFilterParam }) => {
         defaultValue=""
         onChange={(e) => setFilterParam(e.target.value)}
       >
-        <option value="">---</option>
+        <option value="">All</option>
         <option value="frontend">Frontend only</option>
         <option value="fullstack">Full-stack</option>
       </select>

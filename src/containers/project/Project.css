@@ -6,4 +6,41 @@
   min-height: 100vh;
   padding-bottom: 30px;
   counter-reset: project-counter;
+  font-family: var(--ff-sans);
+}
+
+/* containerClassName="flex gap-5 font-bold "
+activeClassName="rounded-full bg-sky-900 text-sky-50 dark:bg-sky-200 dark:text-sky-900 h-6 w-6 text-center"
+previousClassName="text-sky-950 dark:text-sky-400 hover:text-sky-500 dark:hover:text-sky-300"
+nextClassName="text-sky-950 dark:text-sky-400 hover:text-sky-500 dark:hover:text-sky-300"
+pageClassName="text-sky-600 dark:text-sky-100 hover:text-sky-400 dark:hover:text-sky-500" */
+
+.containerClassName {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: bold;
+  align-self: center;
+  margin: 30px 0;
+}
+
+.activeClassName {
+  border-radius: 9999px;
+  padding: 2px 8px;
+  background-color: var(--very-light-green);
+  height: 24px;
+  width: 24px;
+  /* color: var(--dark-green); */
+  color: var(--darker-green) !important;
+}
+
+.nav-btn {
+  color: var(--very-light-green);
+}
+
+.pageClassName {
+  /* color: blue; */
+  color: var(--very-light-green);
+  /* color: red; */
 }
