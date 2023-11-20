@@ -3,9 +3,14 @@ import { BigHeading, ProjectItem, FilterField } from "../../components";
 import { projects } from "../../utils/project-data";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 
 export const Project = () => {
+  const [filterParam, setFilterParam] = useState("");
+
+  const data = filterParam
+    ? projects.filter((project) => project.category === filterParam)
+    : projects;
   gsap.registerPlugin(ScrollTrigger);
   let projectRef = useRef(null);
   useLayoutEffect(() => {
@@ -32,8 +37,9 @@ export const Project = () => {
     >
       <BigHeading text="My Works" />
 
-      {/* <FilterField /> */}
-      {projects.map((project, index) => (
+      <FilterField setFilterParam={setFilterParam} />
+
+      {data.map((project, index) => (
         <ProjectItem
           key={index}
           project={project}

@@ -6,7 +6,9 @@ export const projects = [
       src: images.GuessNinja,
       alt: "Screenshot of the home page of the Guess Ninja game.",
     },
-    description:
+    category: "frontend",
+    platform: "web",
+    summary:
       "A web-based multi-player guess game that improves on the popular basic console guess game. However, it offers something more advanced and out of the ordinary. The game can be played by at most 5 players at a time.",
     tools: ["HTML", "CSS", "JavaScript", "React"],
     view: {
@@ -16,6 +18,12 @@ export const projects = [
         title: "Guess Ninja Repo",
       },
     },
+    overview: "",
+    collaborators: [],
+    yearOfRelease: "2023",
+    challengesFaced: "",
+    solution: "",
+    rolePlayed: "",
   },
 
   {
@@ -24,7 +32,9 @@ export const projects = [
       src: images.CAMS,
       alt: "Screenshot of the home page of Child Abuse Management System.",
     },
-    description:
+    category: "fullstack",
+    platform: "web",
+    summary:
       "A dynamic full-stack web application built and aimed at facilitating the reporting of child abuse cases.",
     tools: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     view: {
@@ -37,6 +47,11 @@ export const projects = [
         title: "Child Abuse Management System Repo",
       },
     },
+    overview: "",
+    collaborators: [],
+    challengesFaced: "",
+    solution: "",
+    yearOfRelease: "2023",
   },
 
   {
@@ -45,7 +60,9 @@ export const projects = [
       src: images.Marketeer,
       alt: "Screenshot of the home page of the Marketeer e-commerce app",
     },
-    description:
+    category: "frontend",
+    platform: "web",
+    summary:
       "A static e-commerce site that leverages inline Paystack API for checkout. It implements input validation and user authentication, and offers verified customers the chance to air their reviews on any product.",
     tools: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Paystack"],
     view: {
@@ -58,6 +75,11 @@ export const projects = [
         title: "Marketeer GiHub Repo",
       },
     },
+    overview: "",
+    collaborators: [],
+    challengesFaced: "",
+    solution: "",
+    yearOfRelease: "2020",
   },
 
   {
@@ -66,7 +88,9 @@ export const projects = [
       src: images.Converter,
       alt: "Screenshot of the home page of the currency converter app",
     },
-    description:
+    category: "frontend",
+    platform: "web",
+    summary:
       "A JavaScript-powered single page that wires into public currency API. The API offers diverse data of countries and their corresponding currency info.",
     tools: ["HTML", "CSS", "JavaScript"],
     view: {
@@ -79,6 +103,11 @@ export const projects = [
         title: "Currency Converter GiHub Repo",
       },
     },
+    overview: "",
+    collaborators: [],
+    challengesFaced: "",
+    solution: "",
+    yearOfRelease: "2021",
   },
 
   {
@@ -87,8 +116,10 @@ export const projects = [
       src: images.Bricademia,
       alt: "Screenshot of the home page of the Bricademia quiz app",
     },
-    description:
-      "A very user-friendly Javascript-powered quiz app. It offers a number of multi-choice questions based on users' chosen subject. It features a timer, and offers functionalities that enable users to keep track of every tests written and to review a just-concluded test.",
+    category: "frontend",
+    platform: "web",
+    summary:
+      "A very user-friendly JavaScript-powered quiz app. It offers a number of multi-choice questions based on users' chosen subject. It features a timer, and offers functionalities that enable users to keep track of every tests written and to review a just-concluded test.",
     tools: ["HTML", "CSS", "JavaScript"],
     view: {
       live: {
@@ -100,5 +131,10 @@ export const projects = [
         title: "Bricademia GitHub Repo",
       },
     },
+    overview: "",
+    collaborators: [],
+    challengesFaced: "",
+    solution: "",
+    yearOfRelease: "2020",
   },
 ];
