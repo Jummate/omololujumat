@@ -51,8 +51,9 @@ export const ProjectItem = ({ project }) => {
           />
         </div>
         <div className="Project__about">
-          <div className="Project__description">
+          <div className="Project__summary">
             <p>{summary}</p>
+            {/* <small className="Project__summary-details">Read more</small> */}
           </div>
           <div className="Project__tools">
             {tools.map((tool, index) => (

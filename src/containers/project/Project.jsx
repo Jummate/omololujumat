@@ -17,6 +17,7 @@ export const Project = () => {
   const data = filterParam
     ? projects.filter((project) => project.category === filterParam)
     : projects;
+
   gsap.registerPlugin(ScrollTrigger);
   let projectRef = useRef(null);
 
@@ -41,7 +42,7 @@ export const Project = () => {
     const endOffset = itemOffset + itemsPerPage;
     setCurrentItems(data?.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(data?.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage, data]);
+  }, [itemOffset, itemsPerPage, filterParam]);
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
@@ -57,6 +58,23 @@ export const Project = () => {
       <BigHeading text="My Works" />
 
       <FilterField setFilterParam={setFilterParam} />
+
+      {/* {currentItems.length > 0 ? (
+        <ReactPaginate
+          breakLabel="..."
+          nextLabel="Next>"
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={3}
+          pageCount={pageCount}
+          previousLabel="<Prev"
+          renderOnZeroPageCount={null}
+          containerClassName="containerClassName"
+          activeClassName="activeClassName"
+          previousClassName="nav-btn"
+          nextClassName="nav-btn"
+          pageClassName="pageClassName"
+        />
+      ) : null} */}
 
       {currentItems.map((project, index) => (
         <ProjectItem
@@ -79,6 +97,7 @@ export const Project = () => {
           previousClassName="nav-btn"
           nextClassName="nav-btn"
           pageClassName="pageClassName"
+          onClick={() => projectRef.current.scrollIntoView()}
         />
       ) : null}
     </section>
