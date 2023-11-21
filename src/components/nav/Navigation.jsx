@@ -47,7 +47,7 @@ export const Nav = () => {
               href=""
               title="Logo"
             >
-              OJ
+              {"<OJ>"}
             </a>
           </h1>
         </div>
