@@ -67,7 +67,7 @@
   color: var(--slate);
 }
 
-.Project__description p {
+.Project__summary p {
   font-family: var(--ff-sans);
   max-width: 500px;
   color: var(--slate);
@@ -78,6 +78,14 @@
   font-size: var(--fs-para);
   letter-spacing: 0.2px;
 }
+
+/* .Project__summary-details {
+  font-weight: bold;
+  color: var(--very-light-green);
+}
+.Project__summary-details:hover {
+  text-decoration: underline;
+} */
 
 @media screen and (width >= 768px) {
   .Project__item {
