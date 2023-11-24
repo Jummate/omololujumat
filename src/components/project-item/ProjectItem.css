@@ -66,8 +66,11 @@
   text-decoration: none;
   color: var(--slate);
 }
+/* .Project__summary {
+  display: flex;
+} */
 
-.Project__summary p {
+.Project__summary span {
   font-family: var(--ff-sans);
   max-width: 500px;
   color: var(--slate);
@@ -79,13 +82,14 @@
   letter-spacing: 0.2px;
 }
 
-/* .Project__summary-details {
+.Project__summary-details {
   font-weight: bold;
   color: var(--very-light-green);
+  cursor: pointer;
 }
 .Project__summary-details:hover {
   text-decoration: underline;
-} */
+}
 
 @media screen and (width >= 768px) {
   .Project__item {

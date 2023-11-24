@@ -1,6 +1,7 @@
 import { images } from "../assets/images";
 export const projects = [
   {
+    _id: 0,
     projectName: "Guess Ninja",
     image: {
       src: images.GuessNinja,
@@ -27,6 +28,7 @@ export const projects = [
   },
 
   {
+    _id: 1,
     projectName: "Child Abuse Management System",
     image: {
       src: images.CAMS,
@@ -55,6 +57,7 @@ export const projects = [
   },
 
   {
+    _id: 2,
     projectName: "Marketeer",
     image: {
       src: images.Marketeer,
@@ -83,6 +86,7 @@ export const projects = [
   },
 
   {
+    _id: 3,
     projectName: "Currency Converter",
     image: {
       src: images.Converter,
@@ -111,6 +115,7 @@ export const projects = [
   },
 
   {
+    _id: 4,
     projectName: "Bricademia",
     image: {
       src: images.Bricademia,

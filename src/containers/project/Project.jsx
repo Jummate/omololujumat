@@ -76,9 +76,9 @@ export const Project = () => {
         />
       ) : null} */}
 
-      {currentItems.map((project, index) => (
+      {currentItems.map((project) => (
         <ProjectItem
-          key={index}
+          key={project._id}
           project={project}
         />
       ))}

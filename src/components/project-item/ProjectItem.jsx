@@ -5,9 +5,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 import { Button } from "../button/Button";
+import truncate from "../../utils/truncate";
 
 export const ProjectItem = ({ project }) => {
   const {
+    _id,
     projectName,
     image: { src, alt },
     summary,
@@ -52,8 +54,8 @@ export const ProjectItem = ({ project }) => {
         </div>
         <div className="Project__about">
           <div className="Project__summary">
-            <p>{summary}</p>
-            {/* <small className="Project__summary-details">Read more</small> */}
+            <span>{truncate(summary)}</span>
+            <small className="Project__summary-details">Read details</small>
           </div>
           <div className="Project__tools">
             {tools.map((tool, index) => (
