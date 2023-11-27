@@ -6,19 +6,22 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 import { Button } from "../button/Button";
 import truncate from "../../utils/truncate";
+import { Link } from "react-router-dom";
 
 export const ProjectItem = ({ project }) => {
+  let projectRef = useRef(null);
   const {
     _id,
     projectName,
     image: { src, alt },
     summary,
+    overview,
     tools,
     view: { live, repo },
   } = project;
 
   gsap.registerPlugin(ScrollTrigger);
-  let projectRef = useRef(null);
+
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const anim = gsap.fromTo(
@@ -55,7 +58,12 @@ export const ProjectItem = ({ project }) => {
         <div className="Project__about">
           <div className="Project__summary">
             <span>{truncate(summary)}</span>
-            <small className="Project__summary-details">Read details</small>
+            <Link
+              to={`project/${_id}`}
+              state={project}
+            >
+              <small className="Project__summary-details">Read details</small>
+            </Link>
           </div>
           <div className="Project__tools">
             {tools.map((tool, index) => (
@@ -85,6 +93,8 @@ export const ProjectItem = ({ project }) => {
           </div>
         </div>
       </div>
+
+      {/* {showDetails && <ProjectDetails overview={overview} />} */}
     </article>
   );
 };

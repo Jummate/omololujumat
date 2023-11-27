@@ -19,7 +19,7 @@ export const projects = [
         title: "Guess Ninja Repo",
       },
     },
-    overview: "",
+    overview: "Guess Ninja game",
     collaborators: [],
     yearOfRelease: "2023",
     challengesFaced: "",
