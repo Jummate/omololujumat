@@ -19,12 +19,15 @@ export const projects = [
         title: "Guess Ninja Repo",
       },
     },
-    overview: "Guess Ninja game",
+    overview:
+      "Guess Ninja game is a Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit. Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit. \n\n Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit.\n\n Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit.\n\n Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit.\n\n Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit",
     collaborators: [],
     yearOfRelease: "2023",
-    challengesFaced: "",
-    solution: "",
-    rolePlayed: "",
+    challengesFaced:
+      "Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit",
+    solution:
+      "Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit",
+    rolePlayed: "frontend development",
   },
 
   {
