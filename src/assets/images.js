@@ -6,6 +6,7 @@ import MyPhoto from "./my-photo.jpg";
 // import MyPhoto2 from "./my-photo2.jpg";
 // import MyPhoto3 from "./my-photo3.jpg";
 import CAMS from "./cams.png";
+import MacroBlog from "./macroblog.png";
 
 export const images = {
   Marketeer,
@@ -15,4 +16,5 @@ export const images = {
   GuessNinja,
   Bricademia,
   CAMS,
+  MacroBlog,
 };

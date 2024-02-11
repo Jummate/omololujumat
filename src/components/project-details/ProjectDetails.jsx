@@ -7,6 +7,13 @@ const ProjectDetails = () => {
   const { state: data } = useLocation();
   const navigate = useNavigate();
 
+  // const icons = {
+  //   linkedin: <FaLinkedin />,
+  //   website: <FaGlobe />,
+  //   email: <BiLogoGmail />,
+  //   twitter: <FaTwitter />,
+  // };
+
   return (
     <section className="ProjectDetails__container">
       <button
@@ -15,7 +22,7 @@ const ProjectDetails = () => {
       >
         <IoIosArrowBack />
       </button>
-      <h1>{data.projectName}</h1>
+      <h2>{data.projectName}</h2>
       <div className="ProjectDetails__action">
         <a
           href={data.view.live.href}
@@ -44,6 +51,7 @@ const ProjectDetails = () => {
                 : "None"}
             </p>
           </div>
+
           <div className="ProjectDetails__items">
             <h3>Platform</h3>
             <p>{data.platform}</p>
@@ -51,6 +59,13 @@ const ProjectDetails = () => {
           <div className="ProjectDetails__items">
             <h3>Role Played</h3>
             <p>{data.rolePlayed}</p>
+          </div>
+        </div>
+        <div className="ProjectDetails__items">
+          <h3>Technologies Used</h3>
+          <div className="cont-tools">
+            {data?.tools?.length > 0 &&
+              data.tools.map((tool, index) => <span key={index}>{tool}</span>)}
           </div>
         </div>
 
@@ -61,9 +76,6 @@ const ProjectDetails = () => {
               <p key={index}>{text}</p>
             ))}
           </div>
-          {/* <p>
-            
-          </p> */}
         </div>
         <div className="ProjectDetails__items">
           <h3>Challenges</h3>
