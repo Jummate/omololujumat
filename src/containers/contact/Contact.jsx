@@ -34,8 +34,7 @@ export const Contact = () => {
         <h2>Get In Touch</h2>
         <div>
           <p>
-            I’m currently looking for new opportunities. However, if you have
-            other request or question, don’t hesitate to use the button below.
+            Got any request or question? Don’t hesitate to use the button below.
             Guaranteed to get a response as swift as practicable.
           </p>
 

@@ -44,7 +44,7 @@ export const Nav = () => {
             }}
           >
             <a
-              href=""
+              href="/"
               title="Logo"
             >
               {"<OJ>"}
@@ -58,7 +58,7 @@ export const Nav = () => {
                 navRef.current[0] = elem;
               }}
             >
-              <a href="">Home</a>
+              <a href="/">Home</a>
             </li>
             <li
               ref={(elem) => {

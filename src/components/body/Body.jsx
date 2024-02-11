@@ -1,5 +1,5 @@
 import "./Body.css";
-import { Footer, Home, About, Project, Contact } from "../../containers";
+import { Home, About, Project } from "../../containers";
 
 export const Body = () => {
   return (
@@ -7,8 +7,6 @@ export const Body = () => {
       <Home />
       <About />
       <Project />
-      <Contact />
-      <Footer />
     </main>
   );
 };
