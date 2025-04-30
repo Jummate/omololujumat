@@ -49,9 +49,9 @@ export const Home = () => {
           className="Home__content"
           ref={(elem) => (homeRef.current[3] = elem)}
         >
-          I'm a front-end developer passionate about transforming ideas into
-          valuable products. I specialize in building well-tailored, responsive
-          and performant web apps to deliver seamless experience to end users.
+          I'm a frontend developer passionate about turning ideas into valuable
+          digital products. I craft business-critical solutions by translating
+          complex UI/UX designs into fast, intuitive user interfaces.
         </p>
         <p ref={(elem) => (homeRef.current[4] = elem)}>
           <a

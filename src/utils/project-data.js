@@ -33,11 +33,9 @@ export const projects = [
       "Macro Blog is a powerful blog site that allows users to create, read, update, and delete blog posts. The site features a dark mode and light mode, and is designed for use by a single user. With its simple and intuitive interface, the site makes it easy to manage and share blog content. Whether you're a seasoned blogger or just getting started, the blog site is a great tool for anyone who wants to share their thoughts and ideas",
     collaborators: [],
     yearOfRelease: "2023",
-    challengesFaced:
-      "Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit",
-    solution:
-      "Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit",
-    rolePlayed: "Frontend Development",
+    challengesFaced: "***Content to be included later***",
+    solution: "***Content to be included later***",
+    rolePlayed: "Frontend Development, Backend development",
   },
   {
     _id: 1,
@@ -59,13 +57,11 @@ export const projects = [
       },
     },
     overview:
-      "Guess Ninja game is a Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit. Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit. \n\n Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit.\n\n Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit.\n\n Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit.\n\n Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit",
+      "A web-based multi-player guess game that improves on the popular basic console guess game. However, it offers something more advanced and out of the ordinary. The game can be played by at most 5 players at a time",
     collaborators: [],
     yearOfRelease: "2023",
-    challengesFaced:
-      "Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit",
-    solution:
-      "Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit Lorem ipsum ignit",
+    challengesFaced: "***Content to be included later***",
+    solution: "***Content to be included later***",
     rolePlayed: "Frontend Development",
   },
 
@@ -91,9 +87,9 @@ export const projects = [
         title: "Child Abuse Management System Repo",
       },
     },
-    overview: "",
+    overview: "***Content to be included later***",
     collaborators: [],
-    challengesFaced: "",
+    challengesFaced: "***Content to be included later***",
     solution: "",
     yearOfRelease: "2023",
   },
