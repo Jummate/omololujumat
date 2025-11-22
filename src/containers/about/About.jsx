@@ -46,35 +46,26 @@ export const About = () => {
         </div>
         <div className="About__content-container">
           <p>
-            Hi, I’m Omololu — a frontend developer with a strong focus on
-            building clean, responsive, and high-performing web applications.
+            Hi, I’m Omololu — a frontend developer dedicated to building clean,
+            responsive, and high-performance web applications.
           </p>
 
           <p>
-            I currently work at{" "}
-            {/* <a
-              href="https://nubiaville.com"
-              target="_blank"
-              title="Nubiaville Limited"
-            >
-              Nubiaville
-            </a> */}
-            <span>Nubiaville</span>, an established IT solutions company, where
-            I’m involved in developing business-critical solutions including
+            At Nubiaville, I work on business-critical systems including the{" "}
             <em>Asset Management System</em>,{" "}
             <em>Transport Management System</em>,{" "}
-            <em>Engineering Job Request System</em>,
-            <em>Performance Management System</em>, among others.
+            <em>Engineering Job Request System</em>,{" "}
+            <em>Performance Management System</em>.
           </p>
 
           <p>
-            I'm always learning, improving my frontend skills, and collaborating
-            to deliver impactful digital experiences.
+            I'm continually learning, refining my frontend skills, and
+            contributing to digital products that make a real impact.
           </p>
           <section className="About__technologies">
             <h2 className="About__technologies-heading">My Stack</h2>
             <p className="About__technologies-text">
-              Some of the technologies and tools that I have used
+              Some of the technologies and tools I work with
             </p>
 
             <div className="About__technologies-items-wrapper">

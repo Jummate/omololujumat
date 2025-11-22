@@ -42,7 +42,7 @@ export const Home = () => {
           className="Home__interest"
           ref={(elem) => (homeRef.current[2] = elem)}
         >
-          I enjoy building stuff for the web.
+          I enjoy building for the web.
         </p>
 
         <p
