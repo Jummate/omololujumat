@@ -1,5 +1,3 @@
-import { Github, Linkedin } from 'lucide-react';
-
 export const SideEmail = () => {
    return (
       <aside className="hidden lg:block w-14 h-96 fixed right-0 bottom-0">

@@ -1,16 +1,6 @@
-import {
-   ChevronRight,
-   Code,
-   Home,
-   Mail,
-   Moon,
-   Sun,
-   User,
-   X,
-   Zap,
-} from 'lucide-react';
-import useTheme from '../hooks/useTheme';
+import { ChevronRight, Code, Home, Mail, User, X, Zap } from 'lucide-react';
 import Connect from './Connect';
+import AppTheme from './AppTheme';
 
 type MenuBoxProps = {
    openMenu: boolean;
@@ -18,23 +8,12 @@ type MenuBoxProps = {
 };
 
 function MenuBox({ openMenu, setOpenMenu }: MenuBoxProps) {
-   const [theme, setTheme] = useTheme();
    if (!openMenu) return null;
    return (
       <article className="fixed top-0 right-0 w-full h-full bg-black/80">
          <div className="fixed top-0 right-0 w-3/4 h-full bg-background p-8 px-4">
             <div className="flex items-center justify-between gap-2 text-foreground mb-24">
-               {theme == 'dark' ? (
-                  <Sun
-                     className="cursor-pointer"
-                     onClick={() => setTheme('light')}
-                  />
-               ) : (
-                  <Moon
-                     className="cursor-pointer"
-                     onClick={() => setTheme('dark')}
-                  />
-               )}
+               <AppTheme />
                <X className="cursor-pointer" onClick={setOpenMenu} />
             </div>
             <ul className="flex flex-col items-center justify-center gap-4 font-semibold text-foreground text-sm">

@@ -1,11 +1,10 @@
 // import { useState } from 'react';
-import { Menu, Moon, Sun } from 'lucide-react';
-import useTheme from '../hooks/useTheme';
+import { Menu } from 'lucide-react';
 import MenuBox from './MenuBox';
 import { useState } from 'react';
+import AppTheme from './AppTheme';
 
 function Navbar() {
-   const [theme, setTheme] = useTheme();
    const [openMenu, setOpenMenu] = useState<boolean>(false);
    return (
       <header className="sticky bg-background top-0 left-0 z-50 ">
@@ -37,17 +36,7 @@ function Navbar() {
             </div>
 
             <div className="flex items-center justify-center gap-2 text-foreground">
-               {theme == 'dark' ? (
-                  <Sun
-                     className="cursor-pointer"
-                     onClick={() => setTheme('light')}
-                  />
-               ) : (
-                  <Moon
-                     className="cursor-pointer"
-                     onClick={() => setTheme('dark')}
-                  />
-               )}
+               <AppTheme />
                <Menu
                   className="block cursor-pointer md:hidden"
                   onClick={() => setOpenMenu(true)}
