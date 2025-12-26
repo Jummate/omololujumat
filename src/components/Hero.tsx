@@ -9,7 +9,7 @@ function Hero() {
             </h5>
 
             <p className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
-               Omololu Jumat.
+               Omololu Jumat
             </p>
 
             <p className="text-3xl mb-4 text-muted/50 font-semibold">

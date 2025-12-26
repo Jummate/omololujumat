@@ -1,8 +1,6 @@
-import React from 'react';
-
-type ButtonProps = {
-   type?: string;
-};
+// type ButtonProps = {
+//    type?: string;
+// };
 function Button() {
    return <button></button>;
 }

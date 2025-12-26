@@ -1,11 +1,9 @@
-// import { useState } from 'react';
-import { Menu, Moon, Sun } from 'lucide-react';
-import useTheme from '../hooks/useTheme';
+import { Menu } from 'lucide-react';
 import MenuBox from './MenuBox';
 import { useState } from 'react';
+import AppTheme from './AppTheme';
 
 function Navbar() {
-   const [theme, setTheme] = useTheme();
    const [openMenu, setOpenMenu] = useState<boolean>(false);
    return (
       <header className="sticky bg-background top-0 left-0 z-50 ">
@@ -21,40 +19,37 @@ function Navbar() {
 
             <div className="hidden text-primary md:block">
                <ul className="flex items-center justify-center gap-10 font-semibold">
-                  <li className="hover:text-primary-dark">
-                     <a href="/">Home</a>
-                  </li>
-                  <li className="hover:text-primary-dark">
-                     <a href="#about">About</a>
-                  </li>
-                  <li className="hover:text-primary-dark">
-                     <a href="#projects">Projects</a>
-                  </li>
-                  <li className="hover:text-primary-dark">
-                     <a href="#contact">Contact</a>
-                  </li>
+                  {[
+                     { label: 'Home', url: '/' },
+                     { label: 'About Me', url: '/about' },
+                     { label: 'Projects', url: '/projects' },
+                     { label: 'Contact', url: '/contact' },
+                  ].map((item) => (
+                     <li
+                        key={item.label}
+                        // className="hover:text-white w-full rounded-lg hover:bg-primary p-2 transition-colors duration-500"
+                        className="transition-colors duration-500"
+                     >
+                        <a
+                           href={item.url}
+                           className="hover:text-primary-dark whitespace-nowrap"
+                        >
+                           {item.label}
+                        </a>
+                     </li>
+                  ))}
                </ul>
             </div>
 
             <div className="flex items-center justify-center gap-2 text-foreground">
-               {theme == 'dark' ? (
-                  <Sun
-                     className="cursor-pointer"
-                     onClick={() => setTheme('light')}
-                  />
-               ) : (
-                  <Moon
-                     className="cursor-pointer"
-                     onClick={() => setTheme('dark')}
-                  />
-               )}
+               <AppTheme />
                <Menu
                   className="block cursor-pointer md:hidden"
                   onClick={() => setOpenMenu(true)}
                />
             </div>
          </nav>
-         <MenuBox openMenu={openMenu} setOpenMenu={() => setOpenMenu(false)} />
+         <MenuBox openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </header>
    );
 }
