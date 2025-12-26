@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import { Menu } from 'lucide-react';
 import MenuBox from './MenuBox';
 import { useState } from 'react';
@@ -20,18 +19,25 @@ function Navbar() {
 
             <div className="hidden text-primary md:block">
                <ul className="flex items-center justify-center gap-10 font-semibold">
-                  <li className="hover:text-primary-dark">
-                     <a href="/">Home</a>
-                  </li>
-                  <li className="hover:text-primary-dark">
-                     <a href="#about">About</a>
-                  </li>
-                  <li className="hover:text-primary-dark">
-                     <a href="#projects">Projects</a>
-                  </li>
-                  <li className="hover:text-primary-dark">
-                     <a href="#contact">Contact</a>
-                  </li>
+                  {[
+                     { label: 'Home', href: '/' },
+                     { label: 'About Me', href: '/' },
+                     { label: 'Projects', href: '/' },
+                     { label: 'Skills', href: '/' },
+                     { label: 'Contact', href: '/' },
+                  ].map((item) => (
+                     <li
+                        key={item.label}
+                        className="hover:text-white w-full rounded-lg hover:bg-primary p-2 transition-colors duration-500"
+                     >
+                        <a
+                           href={item.href}
+                           className="hover:text-primary-dark whitespace-nowrap"
+                        >
+                           {item.label}
+                        </a>
+                     </li>
+                  ))}
                </ul>
             </div>
 
@@ -43,7 +49,7 @@ function Navbar() {
                />
             </div>
          </nav>
-         <MenuBox openMenu={openMenu} setOpenMenu={() => setOpenMenu(false)} />
+         <MenuBox openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </header>
    );
 }
