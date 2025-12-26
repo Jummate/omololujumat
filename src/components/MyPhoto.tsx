@@ -1,5 +1,3 @@
-import React from 'react';
-
 import myPhoto from '../assets/my-photo.jpg';
 
 function MyPhoto() {

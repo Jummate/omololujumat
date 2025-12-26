@@ -20,18 +20,18 @@ function Navbar() {
             <div className="hidden text-primary md:block">
                <ul className="flex items-center justify-center gap-10 font-semibold">
                   {[
-                     { label: 'Home', href: '/' },
-                     { label: 'About Me', href: '/' },
-                     { label: 'Projects', href: '/' },
-                     { label: 'Skills', href: '/' },
-                     { label: 'Contact', href: '/' },
+                     { label: 'Home', url: '/' },
+                     { label: 'About Me', url: '/about' },
+                     { label: 'Projects', url: '/projects' },
+                     { label: 'Contact', url: '/contact' },
                   ].map((item) => (
                      <li
                         key={item.label}
-                        className="hover:text-white w-full rounded-lg hover:bg-primary p-2 transition-colors duration-500"
+                        // className="hover:text-white w-full rounded-lg hover:bg-primary p-2 transition-colors duration-500"
+                        className="transition-colors duration-500"
                      >
                         <a
-                           href={item.href}
+                           href={item.url}
                            className="hover:text-primary-dark whitespace-nowrap"
                         >
                            {item.label}

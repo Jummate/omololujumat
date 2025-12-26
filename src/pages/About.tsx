@@ -1,42 +1,23 @@
-import React from 'react';
 import MyPhoto from '../components/MyPhoto';
-import {
-   ArrowLeft,
-   BriefcaseBusiness,
-   Code,
-   Terminal,
-   User,
-} from 'lucide-react';
+import { BriefcaseBusiness, Code, Terminal, User } from 'lucide-react';
 import { RiJavascriptFill } from 'react-icons/ri';
-import {
-   SiJquery,
-   SiMongoose,
-   SiPrisma,
-   SiTailwindcss,
-   SiTypescript,
-} from 'react-icons/si';
+import { SiJquery, SiMongoose, SiPrisma, SiTailwindcss } from 'react-icons/si';
 import { BiLogoTypescript } from 'react-icons/bi';
 import {
    FaBootstrap,
    FaDocker,
    FaGit,
-   FaJava,
    FaNodeJs,
    FaPython,
    FaReact,
 } from 'react-icons/fa6';
 import { DiJava, DiMysql, DiPostgresql } from 'react-icons/di';
+import PageHeader from '../components/PageHeader';
 
 function About() {
    return (
       <section className="flex flex-col gap-6">
-         <header className="relative text-foreground mb-12">
-            <ArrowLeft className="absolute left-0 top-0 cursor-pointer" />
-            <div className="flex items-center justify-center font-bold">
-               <h1>About Me</h1>
-            </div>
-         </header>
-
+         <PageHeader label="About Me" />
          <section className="flex flex-col gap-1 items-center">
             <MyPhoto />
             <p className="font-bold text-foreground">Omololu Jumat</p>
@@ -143,7 +124,10 @@ function About() {
                         icon: <DiJava size={20} className="text-red-600" />,
                      },
                   ].map(({ label, icon }) => (
-                     <div className="shadow-sm shadow-gray-200/80 rounded-lg items-center p-4 py-2 flex flex-1 max-w-32 justify-center gap-2">
+                     <div
+                        key={label}
+                        className="shadow-sm shadow-gray-200/80 rounded-lg items-center p-4 py-2 flex flex-1 max-w-32 justify-center gap-2"
+                     >
                         <span className="rounded-full p-2 bg-white">
                            {icon}
                         </span>
@@ -183,7 +167,10 @@ function About() {
                         ),
                      },
                   ].map(({ label, icon }) => (
-                     <div className="shadow-sm shadow-gray-200/80 rounded-lg items-center p-4 py-2 flex flex-1 max-w-32 justify-center gap-2">
+                     <div
+                        key={label}
+                        className="shadow-sm shadow-gray-200/80 rounded-lg items-center p-4 py-2 flex flex-1 max-w-32 justify-center gap-2"
+                     >
                         <span className="rounded-full p-2 bg-white">
                            {icon}
                         </span>
@@ -212,7 +199,10 @@ function About() {
                      },
                      { label: 'Prisma', icon: <SiPrisma size={20} /> },
                   ].map(({ label, icon }) => (
-                     <div className="shadow-sm shadow-gray-200/80 rounded-lg items-center p-4 py-2 flex flex-1 max-w-32 justify-center gap-2">
+                     <div
+                        key={label}
+                        className="shadow-sm shadow-gray-200/80 rounded-lg items-center p-4 py-2 flex flex-1 max-w-32 justify-center gap-2"
+                     >
                         <span className="rounded-full p-2 bg-white">
                            {icon}
                         </span>
@@ -236,7 +226,10 @@ function About() {
                         icon: <FaDocker size={20} className="text-blue-900" />,
                      },
                   ].map(({ label, icon }) => (
-                     <div className="shadow-sm shadow-gray-200/80 rounded-lg items-center p-4 py-2 flex flex-1 max-w-32 justify-center gap-2">
+                     <div
+                        key={label}
+                        className="shadow-sm shadow-gray-200/80 rounded-lg items-center p-4 py-2 flex flex-1 max-w-32 justify-center gap-2"
+                     >
                         <span className="rounded-full p-2 bg-white">
                            {icon}
                         </span>

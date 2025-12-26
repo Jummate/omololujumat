@@ -36,18 +36,30 @@ function MenuBox({ openMenu, setOpenMenu }: MenuBoxProps) {
 
             <ul className="flex flex-col items-center justify-center gap-4 font-semibold text-foreground text-sm">
                {[
-                  { label: 'Home', icon: <Home size={15} /> },
-                  { label: 'About Me', icon: <User size={15} /> },
-                  { label: 'Projects', icon: <Code size={15} /> },
-                  { label: 'Skills', icon: <Zap size={15} /> },
-                  { label: 'Contact', icon: <Mail size={15} /> },
+                  { label: 'Home', icon: <Home size={15} />, url: '/' },
+                  {
+                     label: 'About Me',
+                     icon: <User size={15} />,
+                     url: '/about',
+                  },
+                  {
+                     label: 'Projects',
+                     icon: <Code size={15} />,
+                     url: '/projects',
+                  },
+                  // { label: 'Skills', icon: <Zap size={15} />, url:"/skills"},
+                  {
+                     label: 'Contact',
+                     icon: <Mail size={15} />,
+                     url: '/contact',
+                  },
                ].map((item) => (
                   <li
                      key={item.label}
                      className="hover:text-white w-full rounded-lg hover:bg-primary p-2 transition-colors duration-500"
                   >
                      <a
-                        href="/"
+                        href={item.url}
                         className="flex items-center justify-between w-full"
                      >
                         <span className="flex items-center gap-2">
