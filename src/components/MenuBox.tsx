@@ -56,6 +56,7 @@ function MenuBox({ openMenu, setOpenMenu }: MenuBoxProps) {
                ].map((item) => (
                   <li
                      key={item.label}
+                     onClick={() => setOpenMenu(false)}
                      className="hover:text-white w-full rounded-lg hover:bg-primary p-2 transition-colors duration-500"
                   >
                      <a
