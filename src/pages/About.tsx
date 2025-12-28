@@ -34,9 +34,23 @@ function About() {
                clean, responsive, and high-performance web applications.
             </p>
             <p className="text-muted/90 text-sm leading-7 mb-2">
-               At Nubiaville, I work on business-critical systems including the
-               Asset Management System, Transport Management System, Engineering
-               Job Request System, Performance Management System.
+               At Nubiaville, I work on business-critical systems including the{' '}
+               <span className="text-primary font-bold">
+                  Asset Management System
+               </span>
+               ,{' '}
+               <span className="text-primary font-bold">
+                  Transport Management System
+               </span>
+               ,{' '}
+               <span className="text-primary font-bold">
+                  Engineering Job Request System
+               </span>
+               ,{' '}
+               <span className="text-primary font-bold">
+                  Performance Management System
+               </span>
+               .
             </p>
             <p className="text-muted/90 text-sm leading-7">
                I'm continually learning, refining my software development

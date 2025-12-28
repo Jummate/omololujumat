@@ -15,7 +15,7 @@ import Contact from './pages/Contact';
 
 function App() {
    const Layout = () => (
-      <main className="bg-background min-h-screen">
+      <main className="bg-background min-h-screen pb-8">
          <ThemeProvider>
             <Navbar />
          </ThemeProvider>
