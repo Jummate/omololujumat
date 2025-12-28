@@ -1,12 +1,12 @@
 import "./Button.css";
 
-export const Button = ({ text, onClick, extraStyle = "" }) => {
+export const Button = ({ text, onClick, extraStyle = "", children }) => {
   return (
     <button
       className={`buttonStyle ${extraStyle}`}
       onClick={onClick}
     >
-      {text}
+      {children ? children : text}
     </button>
   );
 };
