@@ -1,12 +1,5 @@
-import React from 'react';
-
 import { type Project } from '../data/projects';
 import { Code, Globe } from 'lucide-react';
-
-type ColorMap = {
-   solid: string;
-   faded: string;
-};
 
 const colorClasses = {
    orange: { solid: 'text-orange-500', faded: 'bg-orange-500/10' },

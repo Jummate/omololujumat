@@ -5,19 +5,31 @@ type InputProps = {
    icon: ReactNode;
    type?: 'text' | 'email';
    placeholder: string;
+   required?: boolean;
+   id: string;
 };
 
-function Input({ label, icon, type = 'text', placeholder }: InputProps) {
+function Input({
+   label,
+   icon,
+   type = 'text',
+   placeholder,
+   required = false,
+   id,
+}: InputProps) {
    return (
       <div className="flex flex-col gap-2">
          <label className="text-foreground">{label}</label>
          <div className="relative ring-1 ring-primary-dark/50 rounded-sm flex items-center bg-primary/5 text-foreground text-xs">
             <input
                type={type}
-               className="w-full border-0 focus:outline-0 p-3 flex-1 focus:shadow-2xl"
+               className="w-full border-0 p-3 flex-1 focus:outline-2 focus:outline-primary rounded-sm"
                placeholder={placeholder}
+               required={required}
+               id={id}
+               name={id}
             />
-            <span className="absolute right-0 pl-2 text-center">{icon}</span>
+            <span className="absolute right-0 p-2 text-center">{icon}</span>
          </div>
       </div>
       //   <div className="flex flex-col gap-2">

@@ -1,4 +1,4 @@
-import { ChevronRight, Code, Home, Mail, User, X, Zap } from 'lucide-react';
+import { ChevronRight, Code, Home, Mail, User, X } from 'lucide-react';
 import Connect from './Connect';
 import AppTheme from './AppTheme';
 import { useSlidingMenu } from '../hooks/useSlidingMenu';

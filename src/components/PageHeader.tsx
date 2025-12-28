@@ -15,7 +15,7 @@ function PageHeader({ label }: PageHeaderProps) {
             onClick={() => navigate(-1)}
          />
          <div className="flex items-center justify-center font-bold">
-            <h1>{label}</h1>
+            <h1 className="text-xl">{label}</h1>
          </div>
       </header>
    );

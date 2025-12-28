@@ -1,6 +1,7 @@
-import { Hash, Mail, SendHorizonal, User } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import PageHeader from '../components/PageHeader';
-import Input from '../components/Input';
+import { FaXTwitter } from 'react-icons/fa6';
+import ContactForm from '../components/ContactForm';
 
 function Contact() {
    return (
@@ -14,47 +15,51 @@ function Contact() {
                below and I'll get back to you soon.{' '}
             </h1>
 
-            <form action="" className="flex flex-col gap-5">
-               <Input
-                  placeholder="Jane Doe"
-                  icon={<User size={15} />}
-                  label="Name"
-               />
-               <Input
-                  type="email"
-                  placeholder="jane.doe@gmail.com"
-                  icon={<Mail size={15} />}
-                  label="Email"
-               />
-               <Input
-                  type="text"
-                  placeholder="Project Inquiry"
-                  icon={<Hash size={15} />}
-                  label="Subject"
-               />
+            <ContactForm />
 
-               <div className="flex flex-col gap-2">
-                  <label className="text-foreground">Message</label>
-                  <textarea
-                     //  className="w-full border-0 focus:outline-0 resize-none bg-amber-500"
-                     className="ring-1 ring-primary-dark/50 rounded-sm p-1 px-3 bg-primary/5 text-foreground text-xs"
-                     placeholder="Tell me about your project..."
-                  />
-               </div>
+            <div className="flex gap-3 justify-between my-5 items-center">
+               <div className="flex-1 h-0.5 bg-muted/10"></div>
+               <span className="text-center text-muted/70 text-xs">
+                  Or connect via
+               </span>
+               <div className="flex-1 h-0.5 bg-muted/10"></div>
+            </div>
 
-               <button className="bg-primary text-primary-foreground p-4 rounded-lg flex flex-1 gap-2 cursor-pointer items-center justify-center hover:bg-primary-dark transition-colors duration-500">
-                  Send Message <SendHorizonal />
-               </button>
-
-               {/* <div className="w-full max-w-xl flex flex-col sm:flex-row gap-2 shadow-primary/40 shadow-2xl/50">
-               <button
-                  className="bg-primary text-primary-foreground p-4 rounded-lg flex flex-1 gap-2 cursor-pointer items-center justify-center hover:bg-primary-dark transition-colors duration-500"
+            <div className="flex items-center justify-center gap-3 mb-7">
+               <a
+                  href="https://github.com/Jummate"
+                  aria-label="GitHub"
+                  title="GitHub"
+                  className="rounded-full p-2 bg-muted-foreground text-white hover:bg-primary"
                >
-                  Send Message <SendHorizonal />
-               </button>
-           
-            </div> */}
-            </form>
+                  <Github size={20} />
+               </a>
+
+               <a
+                  href="https://www.linkedin.com/in/omololu-jumat-1405"
+                  aria-label="LinkedIn"
+                  title="LinkedIn"
+                  className="rounded-full p-2 bg-muted-foreground text-white hover:bg-primary"
+               >
+                  <Linkedin size={20} />
+               </a>
+               <a
+                  href="https://x.com/omololu_jumat"
+                  aria-label="X Twitter"
+                  title="X Twitter"
+                  className="rounded-full p-2 bg-muted-foreground text-white hover:bg-primary"
+               >
+                  <FaXTwitter size={20} />
+               </a>
+               <a
+                  href="mailto:omololujumat@gmail.com"
+                  aria-label="Mail"
+                  title="Mail"
+                  className="rounded-full p-2 bg-muted-foreground text-white hover:bg-primary"
+               >
+                  <Mail size={20} />
+               </a>
+            </div>
          </div>
       </section>
    );
