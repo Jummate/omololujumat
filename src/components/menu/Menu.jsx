@@ -38,7 +38,7 @@ export const Menu = ({ onClick }) => {
             <a href="#about">About</a>
           </li>
           <li onClick={onClick}>
-            <a href="#projects">Projects</a>
+            <a href="#projects">My Works</a>
           </li>
           <li onClick={onClick}>
             <a href="#contact">Contact</a>

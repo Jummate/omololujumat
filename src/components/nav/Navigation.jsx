@@ -44,21 +44,21 @@ export const Nav = () => {
             }}
           >
             <a
-              href=""
+              href="/"
               title="Logo"
             >
-              OJ
+              {"<OJ>"}
             </a>
           </h1>
         </div>
-        <div className="Nav__link__container">
+        <div className="Nav__link_container">
           <ul>
             <li
               ref={(elem) => {
                 navRef.current[0] = elem;
               }}
             >
-              <a href="">Home</a>
+              <a href="/">Home</a>
             </li>
             <li
               ref={(elem) => {
@@ -72,7 +72,7 @@ export const Nav = () => {
                 navRef.current[2] = elem;
               }}
             >
-              <a href="#projects">Projects</a>
+              <a href="#projects">My Works</a>
             </li>
             <li
               ref={(elem) => {
@@ -81,20 +81,23 @@ export const Nav = () => {
             >
               <a href="#contact">Contact</a>
             </li>
-            <li
-              ref={(elem) => {
-                navRef.current[4] = elem;
-              }}
-            >
-              <a
-                href={MyCV}
-                target="_blank"
-                extraStyle="p-15"
-              >
-                <Button text="Download CV" />
-              </a>
-            </li>
           </ul>
+        </div>
+        <div className="Nav__action_container">
+          <a
+            href={MyCV}
+            target="_blank"
+            ref={(elem) => {
+              navRef.current[4] = elem;
+            }}
+            className="Nav__action_cv"
+          >
+            <Button
+              text="Download CV"
+              extraStyle="p-15"
+            />
+          </a>
+
           <p
             ref={(elem) => {
               navRef.current[6] = elem;

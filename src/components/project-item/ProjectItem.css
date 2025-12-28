@@ -34,7 +34,7 @@
   width: 100%;
   color: var(--slate);
   font-family: var(--ff-mono);
-  gap: 15px;
+  gap: 20px;
   background-color: var(--darker-green);
   padding-left: 4px;
   position: relative;
@@ -66,8 +66,11 @@
   text-decoration: none;
   color: var(--slate);
 }
+/* .Project__summary {
+  display: flex;
+} */
 
-.Project__description p {
+.Project__summary span {
   font-family: var(--ff-sans);
   max-width: 500px;
   color: var(--slate);
@@ -77,6 +80,15 @@
   margin-bottom: 10px;
   font-size: var(--fs-para);
   letter-spacing: 0.2px;
+}
+
+.Project__summary-details {
+  font-weight: bold;
+  color: var(--very-light-green);
+  cursor: pointer;
+}
+.Project__summary-details:hover {
+  text-decoration: underline;
 }
 
 @media screen and (width >= 768px) {

@@ -1,14 +1,54 @@
 import { images } from "../assets/images";
 export const projects = [
   {
+    _id: 0,
+    projectName: "Macro Blog",
+    image: {
+      src: images.MacroBlog,
+      alt: "Screenshot of the home page of Macro Blog.",
+    },
+    category: "fullstack",
+    platform: "Web",
+    summary:
+      "A powerful blog site that allows users to create, read, update, and delete blog posts. The site features a dark mode and light mode, and is designed for use by a single user. With its simple and intuitive interface, the site makes it easy to manage and share blog content. Whether you're a seasoned blogger or just getting started, the blog site is a great tool for anyone who wants to share their thoughts and ideas",
+    tools: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Tailwind",
+      "NodeJs",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+    ],
+    view: {
+      live: { href: "https://macroblog.onrender.com", title: "Macro Blog" },
+      repo: {
+        href: "https://github.com/Jummate/blog-site",
+        title: "Macro Blog Repo",
+      },
+    },
+    overview:
+      "Macro Blog is a powerful blog site that allows users to create, read, update, and delete blog posts. The site features a dark mode and light mode, and is designed for use by a single user. With its simple and intuitive interface, the site makes it easy to manage and share blog content. Whether you're a seasoned blogger or just getting started, the blog site is a great tool for anyone who wants to share their thoughts and ideas",
+    collaborators: [],
+    yearOfRelease: "2023",
+    challengesFaced: "***Content to be included later***",
+    solution: "***Content to be included later***",
+    rolePlayed: "Frontend Development, Backend development",
+  },
+  {
+    _id: 1,
     projectName: "Guess Ninja",
     image: {
       src: images.GuessNinja,
       alt: "Screenshot of the home page of the Guess Ninja game.",
     },
-    description:
-      "A web-based multi-player guess game built with React and hosted on Netlify. It improves on the popular basic console guess game, offering something more advanced and out of the ordinary. It can be played by at most 5 players at a time.",
-    tools: ["HTML", "CSS", "React", "Netlify"],
+    category: "frontend",
+    platform: "Web",
+    summary:
+      "A web-based multi-player guess game that improves on the popular basic console guess game. However, it offers something more advanced and out of the ordinary. The game can be played by at most 5 players at a time.",
+    tools: ["HTML", "CSS", "JavaScript", "React"],
     view: {
       live: { href: "https://guess-ninja.netlify.app", title: "Guess Ninja" },
       repo: {
@@ -16,24 +56,56 @@ export const projects = [
         title: "Guess Ninja Repo",
       },
     },
+    overview:
+      "A web-based multi-player guess game that improves on the popular basic console guess game. However, it offers something more advanced and out of the ordinary. The game can be played by at most 5 players at a time",
+    collaborators: [],
+    yearOfRelease: "2023",
+    challengesFaced: "***Content to be included later***",
+    solution: "***Content to be included later***",
+    rolePlayed: "Frontend Development",
   },
 
   {
+    _id: 2,
+    projectName: "Child Abuse Management System",
+    image: {
+      src: images.CAMS,
+      alt: "Screenshot of the home page of Child Abuse Management System.",
+    },
+    category: "fullstack",
+    platform: "Web",
+    summary:
+      "A dynamic full-stack web application built and aimed at facilitating the reporting of child abuse cases.",
+    tools: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    view: {
+      live: {
+        href: "https://child-abuse-management-system.000webhostapp.com/",
+        title: "Child Abuse Management System",
+      },
+      repo: {
+        href: "https://github.com/Jummate/child-abuse-management-system",
+        title: "Child Abuse Management System Repo",
+      },
+    },
+    overview: "***Content to be included later***",
+    collaborators: [],
+    challengesFaced: "***Content to be included later***",
+    solution: "",
+    yearOfRelease: "2023",
+  },
+
+  {
+    _id: 3,
     projectName: "Marketeer",
     image: {
       src: images.Marketeer,
-      alt: "Screenshot of the home page of the Marketeer E-commerce app",
+      alt: "Screenshot of the home page of the Marketeer e-commerce app",
     },
-    description:
-      "An e-commerce site built with jQuery and Bootstrap, and hosted on GitHub Pages. It implements complete input validation and user authentication, captures customers' reviews, and leverages inline Paystack API for checkout.",
-    tools: [
-      "HTML",
-      "CSS",
-      "Bootstrap",
-      "jQuery",
-      "Paystack API",
-      "GitHub Pages",
-    ],
+    category: "frontend",
+    platform: "Web",
+    summary:
+      "A static e-commerce site that leverages inline Paystack API for checkout. It implements input validation and user authentication, and offers verified customers the chance to air their reviews on any product.",
+    tools: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Paystack"],
     view: {
       live: {
         href: "https://jummate.github.io/marketeer",
@@ -44,17 +116,25 @@ export const projects = [
         title: "Marketeer GiHub Repo",
       },
     },
+    overview: "",
+    collaborators: [],
+    challengesFaced: "",
+    solution: "",
+    yearOfRelease: "2020",
   },
 
   {
+    _id: 4,
     projectName: "Currency Converter",
     image: {
       src: images.Converter,
       alt: "Screenshot of the home page of the currency converter app",
     },
-    description:
-      "A JavaScript-powered single page currency converter app hosted on GitHub Pages. It wires into public currency API, which offers data of countries and their corresponding currency info.",
-    tools: ["HTML", "CSS", "JavaScript", "Currency API", "GitHub Pages"],
+    category: "frontend",
+    platform: "Web",
+    summary:
+      "A JavaScript-powered single page that wires into public currency API. The API offers diverse data of countries and their corresponding currency info.",
+    tools: ["HTML", "CSS", "JavaScript"],
     view: {
       live: {
         href: "https://jummate.github.io/currency-converter",
@@ -65,17 +145,25 @@ export const projects = [
         title: "Currency Converter GiHub Repo",
       },
     },
+    overview: "",
+    collaborators: [],
+    challengesFaced: "",
+    solution: "",
+    yearOfRelease: "2021",
   },
 
   {
+    _id: 5,
     projectName: "Bricademia",
     image: {
       src: images.Bricademia,
       alt: "Screenshot of the home page of the Bricademia quiz app",
     },
-    description:
-      "A Javascript-powered quiz app hosted on GitHub Pages. It offers a number of multi-choice questions based on users' chosen subject. It  features a timer, and enables users to keep track of tests written and also review a just-concluded test.",
-    tools: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    category: "frontend",
+    platform: "Web",
+    summary:
+      "A very user-friendly JavaScript-powered quiz app. It offers a number of multi-choice questions based on users' chosen subject. It features a timer, and offers functionalities that enable users to keep track of every tests written and to review a just-concluded test.",
+    tools: ["HTML", "CSS", "JavaScript"],
     view: {
       live: {
         href: "https://jummate.github.io/bricademia",
@@ -86,5 +174,10 @@ export const projects = [
         title: "Bricademia GitHub Repo",
       },
     },
+    overview: "",
+    collaborators: [],
+    challengesFaced: "",
+    solution: "",
+    yearOfRelease: "2020",
   },
 ];
