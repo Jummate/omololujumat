@@ -9,6 +9,7 @@ export type Category =
 type Platform = 'Web' | 'Mobile' | 'Desktop';
 
 export type Project = {
+   id: string;
    title: string;
    description: string;
    tech: string[];
@@ -27,6 +28,7 @@ export type Project = {
 
 export const projects: Project[] = [
    {
+      id: '68822db5-6acb-4f3a-9239-3d44b1225ea9',
       title: 'Macro Blog',
       image: images.MacroBlog,
       category: ['Full stack'],
@@ -55,6 +57,7 @@ export const projects: Project[] = [
       rolePlayed: ['Frontend Development, Backend development'],
    },
    {
+      id: '4ebbad54-1278-45f1-b7c0-6882f2e8de1a',
       title: 'Child Abuse Management System',
       image: images.CAMS,
       category: ['Full stack'],
@@ -72,6 +75,7 @@ export const projects: Project[] = [
       rolePlayed: ['Frontend Development, Backend development'],
    },
    {
+      id: 'cc2fa198-e13d-4317-b002-ef60bd707071',
       title: 'Guess Ninja',
       image: images.GuessNinja,
       category: ['Frontend'],
@@ -90,6 +94,7 @@ export const projects: Project[] = [
    },
 
    {
+      id: 'b8e82448-d810-411a-a865-d0f01705e0e3',
       title: 'Marketeer',
       image: images.Marketeer,
       category: ['Frontend'],
@@ -107,6 +112,7 @@ export const projects: Project[] = [
       rolePlayed: ['Frontend Development, Backend development'],
    },
    {
+      id: 'e1284ef9-adff-4f0d-a63f-e88363d44cce',
       title: 'Currency Converter',
       image: images.Converter,
       category: ['Frontend'],
@@ -124,6 +130,7 @@ export const projects: Project[] = [
       rolePlayed: ['Frontend Development'],
    },
    {
+      id: '71cc3048-6054-417a-8e54-b83c3d5d403c',
       title: 'Bricademia',
       image: images.Bricademia,
       category: ['Frontend'],
