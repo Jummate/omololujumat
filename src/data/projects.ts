@@ -72,6 +72,24 @@ export const projects: Project[] = [
       rolePlayed: ['Frontend Development, Backend development'],
    },
    {
+      title: 'Guess Ninja',
+      image: images.GuessNinja,
+      category: ['Frontend'],
+      platform: 'Web',
+      summary:
+         'A web-based multi-player guess game that improves on the popular basic console guess game. However, it offers something more advanced and out of the ordinary. The game can be played by at most 5 players at a time.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'React'],
+      link: 'https://guess-ninja.netlify.app',
+      repo: '"https://github.com/Jummate/guess-ninja',
+      description: 'Lorem ipsum',
+      collaborators: [],
+      releaseYear: 2023,
+      challengesFaced: '***Content to be included later***',
+      solution: '***Content to be included later***',
+      rolePlayed: ['Frontend Development'],
+   },
+
+   {
       title: 'Marketeer',
       image: images.Marketeer,
       category: ['Frontend'],
