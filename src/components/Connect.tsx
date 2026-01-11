@@ -1,4 +1,5 @@
 import { Github, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function Connect() {
    return (
@@ -8,26 +9,24 @@ function Connect() {
          </h1>
          <div className="flex items-center justify-between mb-4">
             <div className="flex gap-4">
-               <a
-                  href="https://github.com/Jummate"
+               <Link
+                  to="https://github.com/Jummate"
                   aria-label="GitHub"
                   title="GitHub"
                   className="rounded-full p-2 bg-muted-foreground text-white  hover:bg-primary"
                >
                   <Github size={20} />
-               </a>
+               </Link>
 
-               <a
-                  href="https://www.linkedin.com/in/omololu-jumat-1405"
+               <Link
+                  to="https://www.linkedin.com/in/omololu-jumat-1405"
                   aria-label="LinkedIn"
                   title="LinkedIn"
                   className="rounded-full p-2 bg-muted-foreground text-white hover:bg-primary"
                >
                   <Linkedin size={20} />
-               </a>
+               </Link>
             </div>
-
-            {/* <div>fg g</div> */}
          </div>
       </section>
    );
