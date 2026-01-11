@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -70,4 +70,93 @@ export default defineConfig([
     },
   },
 ])
+``` -->
+
+<!--
+# Omololu Jumat – Portfolio Website
+
+My personal portfolio website showcasing my projects, skills, and experience as a software developer.
+Built with modern web technologies, with a focus on performance, responsiveness, and clean UI.
+
+---
+
+## 🌐 Live Demo
+
+https://omololujumat.netlify.app/
+
+---
+
+## 🛠 Tech Stack
+
+- React
+- TypeScript
+- Tailwind CSS
+- Bun (package manager & runtime)
+- Git & GitHub
+
+---
+
+## ✨ Features
+
+- Fully responsive (mobile-first)
+- Projects showcase with live demos and source code links
+- About, skills, and experience sections
+- Clean and modern UI
+- Optimized for performance and accessibility
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Bun** installed
+  👉 https://bun.sh
+
+---
+
+### Installation
+
+```bash
+git clone https://github.com/Jummate/omololujumat.git
+cd omololujumat
+bun install
+ -->
+
+# Omololu Jumat – Portfolio Website
+
+My personal portfolio website showcasing my projects, skills, and experience as a software developer.
+Built with modern web technologies, with a focus on performance, responsiveness, and clean UI.
+
+## 🌐 Live Demo
+
+https://omololujumat.netlify.app/
+
+## 🛠 Tech Stack
+
+- React
+- TypeScript
+- Tailwind CSS
+- Bun
+
+## ✨ Features
+
+- Responsive, mobile-first design
+- Projects showcase with live demos
+- Clean and modern UI
+- Performance and accessibility focused
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/Jummate/omololujumat.git
+cd omololujumat
+bun install
+bun run dev
 ```
+
+## 📬 Contact
+
+- Email: omololujumat@gmail.com
+- GitHub: https://github.com/Jummate
+- LinkedIn: https://linkedin.com/in/omololu-jumat-1405
