@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { type Project } from '../data/projects';
 import { Code, Globe } from 'lucide-react';
 
@@ -49,20 +50,20 @@ function ProjectCard({ project }: { project: Project }) {
             </div>
 
             <div className="mt-12 w-full max-w-xl text-xs flex gap-2 shadow-primary/40 shadow-2xl/50 whitespace-nowrap">
-               <a
+               <Link
                   target="_blank"
-                  href={project.link}
+                  to={project.link}
                   className="bg-primary text-primary-foreground p-2 py-1.5 rounded-lg flex gap-2 cursor-pointer items-center justify-center hover:bg-primary-dark transition-colors duration-500"
                >
                   <Globe size={15} /> Live Demo
-               </a>
-               <a
+               </Link>
+               <Link
                   target="_blank"
-                  href={project.repo}
+                  to={project.repo || ''}
                   className="p-2 py-1.5 gap-2 rounded-lg border border-primary flex text-primary items-center justify-center hover:bg-primary-dark hover:text-primary-foreground cursor-pointer transition-colors duration-500"
                >
                   <Code size={15} /> Source
-               </a>
+               </Link>
             </div>
          </div>
       </article>

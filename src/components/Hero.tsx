@@ -1,4 +1,5 @@
 import { MoveRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function Hero() {
    return (
@@ -26,18 +27,18 @@ function Hero() {
                designs into fast, intuitive user interfaces.
             </p>
             <div className="mt-12 w-full max-w-xl flex flex-col sm:flex-row gap-2 shadow-primary/40 shadow-2xl/50">
-               <a
-                  href="/projects"
+               <Link
+                  to="/projects"
                   className="bg-primary text-primary-foreground p-4 rounded-lg flex flex-1 gap-2 cursor-pointer items-center justify-center hover:bg-primary-dark transition-colors duration-500"
                >
                   Check out my work <MoveRight />
-               </a>
-               <a
-                  href="/contact"
+               </Link>
+               <Link
+                  to="/contact"
                   className="p-4 rounded-lg border border-primary flex flex-1 text-primary items-center justify-center hover:bg-primary-dark hover:text-primary-foreground cursor-pointer transition-colors duration-500"
                >
                   Contact Me
-               </a>
+               </Link>
             </div>
          </article>
       </section>

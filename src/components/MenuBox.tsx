@@ -2,6 +2,7 @@ import { ChevronRight, Code, Home, Mail, User, X } from 'lucide-react';
 import Connect from './Connect';
 import AppTheme from './AppTheme';
 import { useSlidingMenu } from '../hooks/useSlidingMenu';
+import { Link } from 'react-router-dom';
 
 type MenuBoxProps = {
    openMenu: boolean;
@@ -59,8 +60,8 @@ function MenuBox({ openMenu, setOpenMenu }: MenuBoxProps) {
                      onClick={() => setOpenMenu(false)}
                      className="hover:text-white w-full rounded-lg hover:bg-primary p-2 transition-colors duration-500"
                   >
-                     <a
-                        href={item.url}
+                     <Link
+                        to={item.url}
                         className="flex items-center justify-between w-full"
                      >
                         <span className="flex items-center gap-2">
@@ -73,7 +74,7 @@ function MenuBox({ openMenu, setOpenMenu }: MenuBoxProps) {
                            size={12}
                            className="text-muted-foreground"
                         />
-                     </a>
+                     </Link>
                   </li>
                ))}
             </ul>
