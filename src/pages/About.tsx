@@ -1,17 +1,17 @@
 import MyPhoto from '../components/MyPhoto';
 import { BriefcaseBusiness, Code, Terminal, User } from 'lucide-react';
 import { RiJavascriptFill } from 'react-icons/ri';
-import { SiJquery, SiMongoose, SiPrisma, SiTailwindcss } from 'react-icons/si';
+import { SiJquery, SiMongoose, SiTailwindcss } from 'react-icons/si';
 import { BiLogoTypescript } from 'react-icons/bi';
 import {
    FaBootstrap,
-   FaDocker,
    FaGit,
+   FaGithub,
    FaNodeJs,
    FaPython,
    FaReact,
 } from 'react-icons/fa6';
-import { DiJava, DiMysql, DiPostgresql } from 'react-icons/di';
+import { DiDjango, DiJava, DiMysql, DiPostgresql } from 'react-icons/di';
 import PageHeader from '../components/PageHeader';
 
 function About() {
@@ -30,9 +30,11 @@ function About() {
             </h2>
 
             <p className="text-muted/90 text-sm leading-7 mb-2">
-               Hi, I’m Omololu — a software developer dedicated to building
-               clean, responsive, and high-performance web applications.
+               Hi, I’m Omololu — a software developer focused on building clean,
+               responsive, and high-performance web applications that solve real
+               business problems.
             </p>
+
             <p className="text-muted/90 text-sm leading-7 mb-2">
                At Nubiaville, I work on business-critical systems including the{' '}
                <span className="text-primary font-bold">
@@ -50,12 +52,13 @@ function About() {
                <span className="text-primary font-bold">
                   Performance Management System
                </span>
-               .
+               , supporting day-to-day operations and internal workflows.
             </p>
+
             <p className="text-muted/90 text-sm leading-7">
-               I'm continually learning, refining my software development
-               skills, and contributing to digital products that make a real
-               impact.
+               I’m continually learning, refining my development skills, and
+               contributing to digital products that are reliable, scalable, and
+               impactful.
             </p>
          </section>
 
@@ -80,9 +83,14 @@ function About() {
                </p>
                <p className="text-sm text-muted/55 mb-3">2021 - Present</p>
                <p className="text-xs leading-6 text-muted">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
+                  Developed and maintained business-critical enterprise web
+                  applications using JavaScript (ES6+) and TypeScript,
+                  supporting 200+ active users.
+               </p>
+               <p className="text-xs leading-6 text-muted">
+                  Worked in an Agile environment, collaborating with designers,
+                  backend engineers, and stakeholders to deliver scalable,
+                  accessible, and production-ready solutions.
                </p>
             </div>
             <div className="relative pl-18">
@@ -93,16 +101,21 @@ function About() {
                   <div className="flex-1 w-0.5 bg-muted-foreground"></div>
                </div>
                <h4 className="font-bold text-foreground">
-                  Freelance Tech Writer
+                  Freelance Tech Content Writer
                </h4>
-               <p className="text-sm text-primary font-semibold">
-                  DevBytes Technologies Inc.
-               </p>
+               <p className="text-sm text-primary font-semibold">DevBytes</p>
                <p className="text-sm text-muted/55 mb-3">Feb 2022 - May 2023</p>
                <p className="text-xs leading-6 text-muted">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
+                  Wrote 30+ technical articles covering core software
+                  development topics such as data structures, algorithms, design
+                  patterns, Git/GitHub workflows, and web security.
+               </p>
+               <p className="text-xs leading-6 text-muted">
+                  Focused on translating complex concepts into clear, practical
+                  explanations with real-world examples and code snippets,
+                  helping readers strengthen their understanding. Worked closely
+                  with editors to ensure technical accuracy, clarity, and
+                  consistency across published content.
                </p>
             </div>
          </section>
@@ -180,6 +193,12 @@ function About() {
                            <FaBootstrap size={20} className="text-purple-600" />
                         ),
                      },
+                     {
+                        label: 'Django',
+                        icon: (
+                           <DiDjango size={20} className="text-purple-600" />
+                        ),
+                     },
                   ].map(({ label, icon }) => (
                      <div
                         key={label}
@@ -211,7 +230,7 @@ function About() {
                         label: 'Mongoose',
                         icon: <SiMongoose size={20} className="" />,
                      },
-                     { label: 'Prisma', icon: <SiPrisma size={20} /> },
+                     // { label: 'Prisma', icon: <SiPrisma size={20} /> },
                   ].map(({ label, icon }) => (
                      <div
                         key={label}
@@ -227,7 +246,7 @@ function About() {
             </article>
 
             <article className="w-full p-4">
-               <h3 className="mb-3">Tools & DevOps</h3>
+               <h3 className="mb-3">Version Control</h3>
 
                <div className="flex flex-wrap gap-2 text-sm">
                   {[
@@ -236,9 +255,13 @@ function About() {
                         icon: <FaGit size={20} className="text-orange-600" />,
                      },
                      {
-                        label: 'Docker',
-                        icon: <FaDocker size={20} className="text-blue-900" />,
+                        label: 'GitHub',
+                        icon: <FaGithub size={20} className="text-blue-900" />,
                      },
+                     // {
+                     //    label: 'Docker',
+                     //    icon: <FaDocker size={20} className="text-blue-900" />,
+                     // },
                   ].map(({ label, icon }) => (
                      <div
                         key={label}
