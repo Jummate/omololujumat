@@ -57,13 +57,15 @@ function ProjectCard({ project }: { project: Project }) {
                >
                   <Globe size={15} /> Live Demo
                </Link>
-               <Link
-                  target="_blank"
-                  to={project.repo || ''}
-                  className="p-2 py-1.5 gap-2 rounded-lg border border-primary flex text-primary items-center justify-center hover:bg-primary-dark hover:text-primary-foreground cursor-pointer transition-colors duration-500"
-               >
-                  <Code size={15} /> Source
-               </Link>
+               {project.repo && (
+                  <Link
+                     target="_blank"
+                     to={project.repo}
+                     className="p-2 py-1.5 gap-2 rounded-lg border border-primary flex text-primary items-center justify-center hover:bg-primary-dark hover:text-primary-foreground cursor-pointer transition-colors duration-500"
+                  >
+                     <Code size={15} /> Source
+                  </Link>
+               )}
             </div>
          </div>
       </article>
