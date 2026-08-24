@@ -24,9 +24,89 @@ export type Project = {
    challengesFaced: string;
    solution: string;
    rolePlayed: string[];
+   isArchived?: boolean;
 };
 
 export const projects: Project[] = [
+   {
+      id: '9c3f6b4e-7a21-4d85-9f18-2e6a4c7b1d90',
+      title: 'ERP Operations Management System',
+      image: images.PortlandGasOps,
+      category: ['Full stack'],
+      platform: ['Web'],
+
+      summary:
+         'A full-stack ERP platform built to centralize order management, inventory control, warehouse operations, fleet dispatch, payments, customer fulfillment, and operational workflows.',
+
+      tech: [
+         'Next.js',
+         'React',
+         'TypeScript',
+         'Tailwind CSS',
+         'Python',
+         'FastAPI',
+         'MySQL',
+      ],
+
+      link: 'https://portland-gas-ops.vercel.app/',
+
+      description:
+         'The ERP Operations Management System is a full-stack business application designed to centralize and streamline core operational processes. The platform supports customer and product management, order processing, payments, inventory and warehouse operations, fleet and trip management, drivers, delivery fulfillment, and operational incident reporting. It is built around connected business workflows, ensuring that actions such as assigning orders to trips, reserving inventory, marking trips ready, dispatching trips, checking out stock, and confirming delivery are handled as coordinated processes across multiple modules. The system also distinguishes between individually tracked inventory items and quantity-based consumable stock, allowing each inventory type to follow its own allocation and fulfillment workflow.',
+
+      collaborators: ['Development Team'],
+
+      releaseYear: 2026,
+
+      challengesFaced:
+         'Designing and coordinating complex business workflows across interconnected modules was a major challenge. Orders, inventory, warehouse locations, trips, payments, and fulfillment states needed to remain consistent as operations progressed. The inventory system also required separate workflows for individually tracked assets and quantity-based consumables. Tracked items needed to be specifically selected, reserved, assigned to order items, and checked out during dispatch, while consumable stock needed to be allocated from warehouse locations, deducted during reservation, and recorded during checkout. Ensuring that cancellations and workflow reversals correctly released or restored allocated resources also required careful management of state transitions and relationships across the system.',
+
+      solution:
+         'Implemented a modular full-stack architecture using Next.js and FastAPI, with domain models, repositories, services, guards, and workflow layers responsible for different parts of the business logic. Inventory operations were separated into tracked-item and consumable-stock flows. Tracked inventory uses individual item records and order-item assignments, while consumables are managed as quantity-based stock per warehouse location. Dedicated workflows coordinate operations such as inventory reservation, trip readiness, dispatch, stock checkout, and inventory release. Stock movements and audit records provide traceability for inventory and operational actions, while SQLAlchemy models and MySQL relationships maintain structured connections between orders, inventory, trips, customers, users, and warehouse locations.',
+
+      rolePlayed: [
+         'Frontend Development',
+         'Backend Development',
+         'API Development',
+         'Database Design',
+         'Business Workflow Implementation',
+         'Inventory System Development',
+         'System Architecture',
+      ],
+
+      isArchived: false,
+   },
+
+   {
+      id: '7c4e8f21-5a93-4d67-b812-91f3e6a4c520',
+      title: 'Alumni Management Platform',
+      image: images.AlumniApp,
+      category: ['Full stack'],
+      platform: ['Web'],
+      summary:
+         'A full-featured alumni management platform that brings together alumni networking, messaging, e-commerce, project tracking, ordering, and administrative management in a single web application.',
+
+      tech: ['React', 'Tailwind CSS', 'PHP', 'MySQL'],
+
+      link: 'https://alumni-app-three.vercel.app',
+      repo: undefined,
+
+      description:
+         'An integrated alumni management platform designed to provide a centralized digital space for alumni and administrators. The application supports alumni communication through a messaging system, enables users to browse and purchase products through an e-commerce module, and provides tools for tracking alumni projects and activities. It also includes an ordering system, content management capabilities, user management, and an administrative interface for managing users, content, products, orders, and other platform operations.',
+
+      collaborators: [],
+
+      releaseYear: 2026,
+
+      challengesFaced:
+         'Building a large multi-feature platform while maintaining a consistent user experience across different modules and ensuring that frontend components could support different user roles and workflows.',
+
+      solution:
+         'Contributed to the frontend development by building reusable UI components and implementing interfaces for the platform’s major modules, including alumni communication, e-commerce, project tracking, ordering, content management, and administrative functionality.',
+
+      rolePlayed: ['Frontend Development'],
+
+      isArchived: false,
+   },
    {
       id: '68822db5-6acb-4f3a-9239-3d44b1225ea9',
       title: 'Macro Blog',
@@ -57,6 +137,7 @@ export const projects: Project[] = [
       solution:
          'Implemented a RESTful backend with clear data models and integrated it with a React-based frontend. Used MongoDB and Mongoose for flexible data handling and applied Tailwind CSS for consistent styling and theming.',
       rolePlayed: ['Frontend Development', 'Backend development'],
+      isArchived: false,
    },
    {
       id: '4ebbad54-1278-45f1-b7c0-6882f2e8de1a',
@@ -78,6 +159,7 @@ export const projects: Project[] = [
       solution:
          'Implemented role-based access and structured data storage using PHP and MySQL. Focused on clear form validation, controlled data flow, and a straightforward UI to reduce friction during report submission.',
       rolePlayed: ['Frontend Development', 'Backend development'],
+      isArchived: true,
    },
    {
       id: 'cc2fa198-e13d-4317-b002-ef60bd707071',
@@ -99,6 +181,7 @@ export const projects: Project[] = [
       solution:
          'Built modular game logic using React and JavaScript, ensuring predictable state transitions and clear feedback for players during gameplay.',
       rolePlayed: ['Frontend Development'],
+      isArchived: false,
    },
 
    {
@@ -121,6 +204,7 @@ export const projects: Project[] = [
       solution:
          'Integrated Paystack’s inline payment API and implemented validation logic using JavaScript and jQuery. Ensured a smooth checkout flow and restricted reviews to authenticated users.',
       rolePlayed: ['Frontend Development', 'Backend development'],
+      isArchived: true,
    },
    {
       id: 'e1284ef9-adff-4f0d-a63f-e88363d44cce',
@@ -142,6 +226,7 @@ export const projects: Project[] = [
       solution:
          'Used JavaScript’s async handling to manage API responses efficiently and implemented basic error handling to improve reliability and user feedback.',
       rolePlayed: ['Frontend Development'],
+      isArchived: true,
    },
    {
       id: '71cc3048-6054-417a-8e54-b83c3d5d403c',
@@ -163,5 +248,6 @@ export const projects: Project[] = [
       solution:
          'Structured quiz data clearly and implemented straightforward question navigation and scoring logic using vanilla JavaScript.',
       rolePlayed: ['Frontend Development'],
+      isArchived: false,
    },
 ];

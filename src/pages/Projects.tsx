@@ -12,11 +12,12 @@ function Projects() {
    //   const test = Array(12).fill("My All")
    //   const categories = ['All', ...test, ...existingCategories];
    const categories: (Category | 'All')[] = ['All', ...existingCategories];
+   const activeProjects = projects.filter((project) => !project.isArchived);
 
    const data =
       active === 'All'
-         ? projects
-         : projects.filter((project) =>
+         ? activeProjects
+         : activeProjects.filter((project) =>
               project.category
                  .toString()
                  .toLowerCase()

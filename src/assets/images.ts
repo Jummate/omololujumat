@@ -7,6 +7,9 @@ import MyPhoto from './my-photo.jpg';
 // import MyPhoto3 from "./my-photo3.jpg";
 import CAMS from './cams.png';
 import MacroBlog from './macroblog.png';
+import PortlandGasOps from './portland-gas.jpg';
+import AlumniApp from './alumni-app.jpg';
+import RateAgent from './rate-agent.jpg';
 
 export const images = {
    Marketeer,
@@ -17,4 +20,7 @@ export const images = {
    Bricademia,
    CAMS,
    MacroBlog,
+   PortlandGasOps,
+   AlumniApp,
+   RateAgent,
 };
